@@ -1,0 +1,208 @@
+.btn {
+  display: inline-flex;
+  padding: 21px 10px;
+  justify-content: center;
+  align-items: center;
+
+  color: $color-default-white;
+
+  background-color: $color-navy-blue;
+  border: none;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-size: $fz-default;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+
+  transition: opacity $trans-default;
+
+  @include hover-focus {
+    padding: 20px 10px;
+    border: 1px solid $color-resolution-blue;
+
+    color: $color-resolution-blue;
+    background-color: $color-default-white;
+
+    cursor: pointer;
+  }
+
+  @include active {
+    padding: 21px 10px;
+    border: none;
+
+    color: $color-default-white;
+    background-color: $color-resolution-blue;
+    cursor: pointer;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+
+    pointer-events: none;
+  }
+
+  &--arrow {
+    padding: 17px 12px;
+
+    cursor: pointer;
+
+    @include hover-focus {
+      padding: 16px 11px;
+      cursor: pointer;
+    }
+
+    @include active {
+      padding: 17px 12px;
+      cursor: pointer;
+    }
+  }
+
+  &--link {
+    position: relative;
+    padding: 0 20px 0 0;
+
+    color: $color-default-black;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: $fz-default;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+
+    transition: opacity $trans-default;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../../img/sprite.svg#breadcrumb");
+    }
+
+    @include hover-focus {
+      color: $color-resolution-blue;
+      border: none;
+      padding: 0 20px 0 0;
+    }
+
+    @include active {
+      color: $color-navy-blue;
+      border: none;
+      padding: 0 20px 0 0;
+    }
+
+    &::disabled {
+      color: $color-blue-opacity;
+    }
+  }
+
+  &--icon {
+    display: inline-flex;
+    padding: 10px 6px;
+    justify-content: center;
+    align-items: center;
+
+    color: $color-default-black;
+
+    background-color: transparent;
+    border: 1px solid $color-elephant-opacity;
+    cursor: pointer;
+
+    transition: opacity $trans-default;
+
+    @include hover-focus {
+      border: 1px solid $color-elephant;
+      padding: 10px 6px;
+    }
+
+    @include active {
+      padding: 10px 6px;
+      color: $color-default-white;
+      background-color: $color-navy-blue;
+      border: 1px solid $color-navy-blue;
+    }
+  }
+
+  &--menu-link-dark {
+    font-family: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 3px 5px;
+    background-color: transparent;
+    color: $color-default-white;
+
+    @include hover {
+      padding: 3px 5px;
+      border: none;
+      border-bottom: 1px solid $color-default-white;
+      background-color: transparent;
+      color: $color-default-white;
+    }
+
+    @include focus {
+      padding: 3px 5px;
+      border: none;
+      outline: 1px solid $color-default-white;
+      background-color: transparent;
+      color: $color-default-white;
+    }
+
+    @include active {
+      padding: 3px 5px;
+      border: none;
+      background-color: transparent;
+      color: $color-default-white;
+    }
+
+    &:disabled {
+      color: $color-white-opacity;
+    }
+  }
+
+  &--menu-link-light {
+    font-family: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 3px 5px;
+    background-color: transparent;
+    color: $color-default-black;
+
+    @include hover {
+      padding: 3px 5px;
+      border: none;
+      border-bottom: 1px solid $color-default-black;
+      background-color: transparent;
+      color: $color-default-black;
+    }
+
+    @include focus {
+      padding: 3px 5px;
+      border: none;
+      outline: 1px solid $color-default-black;
+      background-color: transparent;
+      color: $color-default-black;
+    }
+
+    @include active {
+      padding: 3px 5px;
+      border: none;
+      background-color: transparent;
+      color: $color-default-black;
+    }
+
+    &:disabled {
+      color: $color-black-opacity;
+    }
+  }
+}

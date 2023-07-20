@@ -18,11 +18,26 @@
 // Blocks
 // ---------------------------------
 
-@import "blocks/btn";
-@import "blocks/modal";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
+@import "blocks/components/advantage-card.scss";
+@import "blocks/components/audio-player.scss";
+@import "blocks/components/btn.scss";
+@import "blocks/components/custom-input.scss";
+@import "blocks/components/map.scss";
+@import "blocks/components/menu.scss";
+@import "blocks/components/photo-cards.scss";
+@import "blocks/components/review-card.scss";
+@import "blocks/components/video.scss";
+@import "blocks/sections/about.scss";
+@import "blocks/sections/advantages.scss";
+@import "blocks/sections/contacts.scss";
+@import "blocks/sections/footer.scss";
+@import "blocks/sections/gallery.scss";
+@import "blocks/sections/header.scss";
+@import "blocks/sections/questions-form.scss";
+@import "blocks/sections/reviews.scss";
+@import "blocks/sections/tours.scss";
+@import "blocks/sections/training.scss";
+
 
 // ---------------------------------
 
