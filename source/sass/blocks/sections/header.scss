@@ -1,0 +1,17 @@
+.header {
+  width: 100%;
+  margin: 0 auto;
+  background-color: $color-blue-opacity;
+}
+
+.header--opened {
+  @include vp-1199 {
+    height: auto;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $color-default-white;
+    z-index: 2;
+  }
+}

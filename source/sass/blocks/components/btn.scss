@@ -108,6 +108,8 @@
     padding: 10px 6px;
     justify-content: center;
     align-items: center;
+    width: 30px;
+    height: 30px;
 
     color: $color-default-black;
 
@@ -141,7 +143,7 @@
     color: $color-default-white;
 
     @include hover {
-      padding: 3px 5px;
+      padding: 3px 5px 2px 5px;
       border: none;
       border-bottom: 1px solid $color-default-white;
       background-color: transparent;
@@ -149,7 +151,7 @@
     }
 
     @include focus {
-      padding: 3px 5px;
+      padding: 3px 5px 2px 5px;
       border: none;
       outline: 1px solid $color-default-white;
       background-color: transparent;
@@ -179,7 +181,7 @@
     color: $color-default-black;
 
     @include hover {
-      padding: 3px 5px;
+      padding: 3px 5px 2px 5px;
       border: none;
       border-bottom: 1px solid $color-default-black;
       background-color: transparent;
@@ -187,7 +189,7 @@
     }
 
     @include focus {
-      padding: 3px 5px;
+      padding: 3px 5px 2px 5px;
       border: none;
       outline: 1px solid $color-default-black;
       background-color: transparent;
@@ -195,7 +197,7 @@
     }
 
     @include active {
-      padding: 3px 5px;
+      padding: 3px 5px 2px 5px;
       border: none;
       background-color: transparent;
       color: $color-default-black;

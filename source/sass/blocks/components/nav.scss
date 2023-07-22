@@ -1,0 +1,259 @@
+.nav {
+  width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 40px 0 0 0;
+
+  @include vp-1199 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 0 0 0;
+    width: 678px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px 0 0 0;
+    width: 290px;
+    margin: 0 auto 0 0;
+  }
+
+  &--footer {
+    padding: 0;
+
+    @include vp-1199 {
+      grid-template-columns: auto 1fr;
+    }
+
+    @include vp-767 {
+      gap: 15px;
+    }
+  }
+}
+
+.nav__button {
+  display: none;
+}
+
+@include vp-1199 {
+  .nav__button {
+    display: block;
+    grid-row: 1 / -1;
+    width: 23px;
+    height: 23px;
+
+    box-sizing: content-box;
+
+    background-color: transparent;
+    border: none;
+    padding: 11px 0;
+    color: $color-default-white;
+
+    cursor: pointer;
+
+    @include vp-767 {
+      grid-row: 1 / 3;
+    }
+  }
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 26px;
+
+  list-style-type: none;
+
+  padding: 0;
+  margin: 0;
+
+  @include vp-1199 {
+    gap: 10px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-left: auto;
+  }
+
+  @include vp-767 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    row-gap: 15px;
+    column-gap: 75px;
+    margin: 0 auto 10px 0;
+
+    justify-self: flex-start;
+  }
+}
+
+.nav__tel {
+  color: $color-default-white;
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+
+  @include vp-1199 {
+    grid-row: 1 / -1;
+    margin-left: auto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+  }
+
+  @include vp-767 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14px;
+  }
+
+  &--footer {
+    color: $color-default-black;
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
+
+  @include hover-focus {
+    color: $color-resolution-blue;
+  }
+
+  @include active {
+    color: $color-navy-blue;
+  }
+
+  &:disabled {
+    color: $color-white-disabled;
+  }
+}
+
+@include vp-1199 {
+  .nav__list--close {
+    display: none;
+  }
+
+  .nav__list--open {
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: $color-default-black;
+
+    gap: 26px;
+    padding: 0;
+    margin: 50px 0 70px 0;
+    list-style-type: none;
+
+    @include vp-767 {
+      margin: 30px 0 50px 0;
+      grid-row: 3 / 4;
+      grid-column: 1 / 2;
+    }
+  }
+
+  .nav__link--opened {
+    color: $color-default-black;
+    font-family: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+    text-align: left;
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.56px;
+    }
+
+    @include hover-focus {
+      color: $color-resolution-blue;
+    }
+
+    @include active {
+      color: $color-navy-blue;
+    }
+  }
+
+  .nav__button-close-icon {
+    display: none;
+    grid-column: 1 / 2;
+
+    color: $color-default-black;
+  }
+
+  .nav__button-open-icon {
+    display: block;
+    grid-column: 1 / 2;
+
+    color: $color-default-white;
+  }
+
+  .nav__tel--close {
+    color: $color-default-white;
+
+    @include hover-focus {
+      color: $color-resolution-blue;
+    }
+
+    @include active {
+      color: $color-navy-blue;
+    }
+
+    &:disabled {
+      color: $color-blue-opacity;
+    }
+  }
+
+  .nav__tel--open {
+    color: $color-elephant;
+
+    @include vp-767 {
+      grid-row: 2 / 3;
+    }
+
+    @include hover-focus {
+      color: $color-resolution-blue;
+    }
+
+    @include active {
+      color: $color-navy-blue;
+    }
+
+    &:disabled {
+      color: $color-blue-opacity;
+    }
+  }
+}
+
+.nav__list-item {
+  display: inline-flex;
+
+  @include vp-767 {
+    font-size: 14px;
+  }
+}
+
+.nav__link {
+  @include vp-1199 {
+    font-family: inherit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+  }
+}

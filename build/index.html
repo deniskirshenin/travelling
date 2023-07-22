@@ -18,8 +18,46 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header">
+        <div class="container">
+            <nav class="nav">
+              <a class="logo" href="/">
+                <svg class="logo__icon logo__icon--close" width="205" height="62">
+                  <use xlink:href="./img/sprite.svg#logo"></use>
+                </svg>
+              </a>
+              <button class="nav__button nav__button--open">
+                <span class="visually-hidden">Открыть меню</span>
+                <svg class="nav__button-open-icon" width="23" height="23">
+                  <use xlink:href="./img/sprite.svg#menu"></use>
+                </svg>
+                <svg class="nav__button-close-icon" width="22" height="22">
+                  <use xlink:href="./img/sprite.svg#cross"></use>
+                </svg>
+              </button>
+              <ul class="nav__list nav__list--close">
+                <li class="nav__list-item">
+                  <a class="btn btn--menu-link-dark nav__link" href="#">Туры</a>
+                </li>
+                <li class="nav__list-item">
+                  <a class="btn btn--menu-link-dark nav__link" href="#">Обучение</a>
+                </li>
+                <li class="nav__list-item">
+                  <a class="btn btn--menu-link-dark nav__link" href="#">О нас</a>
+                </li>
+                <li class="nav__list-item">
+                  <a class="btn btn--menu-link-dark nav__link" href="#">Отзывы</a>
+                </li>
+                <li class="nav__list-item">
+                  <a class="btn btn--menu-link-dark nav__link" href="#">Фотографии</a>
+                </li>
+                <li class="nav__list-item">
+                  <a class="btn btn--menu-link-dark nav__link" href="#">Контакты</a>
+                </li>
+              </ul>
+              <a class="nav__tel nav__tel--close" href="tel:+88007253232">8 800 725 32 32</a>
+            </nav>
+        </div>
       </header>
       <main>
         <section class="intro">
@@ -37,40 +75,59 @@
           </div>
         </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <nav class="nav nav--footer">
+              <a class="logo logo--footer" href="/">
+                <svg class="logo__icon logo__icon--footer" width="205" height="62">
+                  <use xlink:href="./img/sprite.svg#logo"></use>
+                </svg>
+              </a>
+              <ul class="nav__list">
+                <li class="nav__list-item">
+                  <a class="btn btn--menu-link-light nav__link" href="#">Туры</a>
+                </li>
+                <li class="nav__list-item">
+                  <a class="btn btn--menu-link-light nav__link" href="#">Обучение</a>
+                </li>
+                <li class="nav__list-item">
+                  <a class="btn btn--menu-link-light nav__link" href="#">О нас</a>
+                </li>
+                <li class="nav__list-item">
+                  <a class="btn btn--menu-link-light nav__link" href="#">Отзывы</a>
+                </li>
+                <li class="nav__list-item">
+                  <a class="btn btn--menu-link-light nav__link" href="#">Фотографии</a>
+                </li>
+                <li class="nav__list-item">
+                  <a class="btn btn--menu-link-light nav__link" href="#">Контакты</a>
+                </li>
+              </ul>
+              <a class="nav__tel nav__tel--footer" href="tel:+88007253232">8 800 725 32 32</a>
+            </nav>
+            <ul class="socials">
+              <li><a class="btn btn--icon" href="#">
+                <svg width="16" height="9">
+                  <use xlink:href="./img/sprite.svg#vk"></use>
+                </svg>
+              </a></li>
+              <li><a class="btn btn--icon" href="#">
+                <svg width="9" height="16">
+                  <use xlink:href="./img/sprite.svg#odnoklassniki"></use>
+                </svg>
+              </a></li>
+              <li><a class="btn btn--icon" href="#">
+                <svg width="14" height="15">
+                  <use xlink:href="./img/sprite.svg#reddit"></use>
+                </svg>
+              </a></li>
+            </ul>
+            <small>Политика конфиденциальности</small>
+          </div>
+        </div>
       </footer>
     </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
