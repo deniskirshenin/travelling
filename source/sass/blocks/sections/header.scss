@@ -1,7 +1,13 @@
 .header {
+  position: absolute;
   width: 100%;
   margin: 0 auto;
   background-color: $color-blue-opacity;
+
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 3;
 }
 
 .header--opened {
@@ -10,6 +16,7 @@
     left: 0;
     position: fixed;
     top: 0;
+    left: 50%;
     width: 100%;
     background-color: $color-default-white;
     z-index: 2;

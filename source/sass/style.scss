@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -29,6 +29,7 @@
 @import "blocks/components/video.scss";
 @import "blocks/components/logo.scss";
 @import "blocks/components/socials.scss";
+@import "blocks/components/tour-card.scss";
 @import "blocks/sections/about.scss";
 @import "blocks/sections/advantages.scss";
 @import "blocks/sections/contacts.scss";
@@ -39,8 +40,7 @@
 @import "blocks/sections/reviews.scss";
 @import "blocks/sections/tours.scss";
 @import "blocks/sections/training.scss";
-
-
+@import "blocks/sections/hero.scss";
 
 // ---------------------------------
 

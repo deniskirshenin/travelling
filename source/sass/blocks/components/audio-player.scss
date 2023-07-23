@@ -1,0 +1,14 @@
+.audio-player {
+  position: absolute;
+  right: 120px;
+  top: 301px;
+
+  @include vp-1199 {
+    position: static;
+    margin: 0 auto 220px auto;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}

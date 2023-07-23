@@ -1,0 +1,40 @@
+.photo-cards {
+  display: flex;
+
+  @include vp-1199 {
+    justify-content: center;
+    margin: 0 0 40px 0;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.photo-cards__image {
+  position: absolute;
+
+  @include vp-1199 {
+    position: static;
+  }
+
+  &--first {
+    top: 202px;
+    right: 222px;
+    z-index: -1;
+
+    @include vp-1199 {
+      transform: translateY(-10px);
+    }
+  }
+
+  &--second {
+    top: 295px;
+    right: 120px;
+
+    @include vp-1199 {
+      transform: translate(-60px, 25px);
+    }
+  }
+}
+

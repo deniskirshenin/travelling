@@ -45,24 +45,34 @@
   }
 
   &--arrow {
-    padding: 17px 12px;
+    padding: 13px 11px 13px 12px;
 
     cursor: pointer;
 
     @include hover-focus {
-      padding: 16px 11px;
+      padding: 12px 10px 12px 11px;
       cursor: pointer;
+      color: $color-resolution-blue;
     }
 
     @include active {
-      padding: 17px 12px;
+      padding: 12px 10px 12px 11px;
+      color: $color-default-white;
+      background-color: $color-resolution-blue;
       cursor: pointer;
+    }
+
+    &:disabled {
+      color: $color-default-white;
+      opacity: 1;
+      background-color: $color-blue-opacity;
     }
   }
 
   &--link {
-    position: relative;
-    padding: 0 20px 0 0;
+    gap: 12px;
+
+    padding: 0;
 
     color: $color-default-black;
 
@@ -80,25 +90,26 @@
 
     transition: opacity $trans-default;
 
-    &::after {
-      position: absolute;
-      content: "";
-      background-image: url("../../img/sprite.svg#breadcrumb");
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.56px;
     }
 
     @include hover-focus {
+      padding: 0;
       color: $color-resolution-blue;
       border: none;
-      padding: 0 20px 0 0;
     }
 
     @include active {
+      padding: 0;
       color: $color-navy-blue;
       border: none;
-      padding: 0 20px 0 0;
     }
 
     &::disabled {
+      padding: 0;
       color: $color-blue-opacity;
     }
   }

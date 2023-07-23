@@ -1,0 +1,91 @@
+.video {
+  position: absolute;
+  top: 301px;
+  right: 120px;
+  z-index: 0;
+
+  @include vp-1199 {
+    position: static;
+    width: 442px;
+    height: 300px;
+    margin: 0 auto 148px auto;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.video__player {
+  display: none;
+}
+
+.video__poster {
+  position: relative;
+
+  @include vp-1199 {
+    width: 442px;
+    height: 300px;
+  }
+}
+
+.video__play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  @include vp-1199 {
+    top: 64%;
+  }
+
+  @include hover-focus {
+    .video__play-button-icon circle {
+      fill: none;
+      fill-opacity: none;
+      stroke: $color-resolution-blue;
+    }
+
+    .video__play-button-icon path {
+      fill: $color-default-white;
+      stroke: $color-black-russian;
+    }
+  }
+
+  @include active {
+    .video__play-button-icon circle {
+      fill: $color-resolution-blue;
+      fill-opacity: none;
+      stroke: $color-resolution-blue;
+    }
+
+    .video__play-button-icon path {
+      fill: $color-default-white;
+      stroke: none;
+    }
+  }
+
+  &:disabled {
+    .video__play-button-icon circle {
+      fill: none;
+      fill-opacity: none;
+      stroke-opacity: 0.1;
+      stroke: $color-navy-blue;
+    }
+
+    .video__play-button-icon path {
+      fill: $color-navy-blue;
+      fill-opacity: 0.1;
+      stroke: none;
+    }
+  }
+}
