@@ -4,6 +4,10 @@
   background-color: $color-default-white;
   color: $color-default-black;
 
+  @include vp-767 {
+    z-index: 3;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -13,6 +17,8 @@
     height: 1364px;
     right: 0;
     top: -18px;
+
+    z-index: 1;
 
     @include vp-1199 {
       background-image: url("../../../img/clouds-tablet@1x.png");
@@ -25,6 +31,8 @@
       width: 177px;
       height: 595px;
       top: 137px;
+
+      z-index: 0;
     }
 
     @include retina {
@@ -39,6 +47,25 @@
       }
     }
   }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../../img/clouds-small-desktop@1x.png");
+    background-size: 100% 100%;
+    width: 418px;
+    height: 279px;
+    left: 0;
+    top: 502px;
+
+    @include vp-1199 {
+      display: none;
+    }
+
+    @include retina {
+      background-image: url("../../../img/clouds-small-desktop@2x.png");
+    }
+  }
 }
 
 .tours__wrapper {
@@ -49,6 +76,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
+  z-index: 2;
+
   @include vp-1199 {
     width: 678px;
 
@@ -58,7 +87,7 @@
   @include vp-767 {
     width: 290px;
 
-    padding: 65px 0;
+    padding: 65px 0 60px 0;
   }
 }
 

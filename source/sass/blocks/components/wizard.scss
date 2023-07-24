@@ -1,0 +1,97 @@
+.wizard {
+  display: flex;
+  flex-direction: column;
+}
+
+.wizard__step {
+  flex: 1;
+}
+
+.wizard__dot {
+  /* Center the content */
+  align-items: center;
+  display: flex;
+
+  @include vp-767 {
+    align-items: flex-start;
+  }
+}
+
+.wizard__dot--pine {
+  @include vp-1199 {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  @include vp-767 {
+    flex-direction: row;
+  }
+}
+
+.wizard__connector {
+  flex: 1;
+  height: 1px;
+  background-color: $color-navy-blue;
+  opacity: 0.2;
+
+  @include vp-767 {
+    min-height: 24px;
+    width: 1px;
+    margin: 0 24px 0 -7px;
+    align-self: flex-start;
+    justify-self: flex-end;
+  }
+}
+
+.wizard__connector--map {
+  @include vp-767 {
+    align-self: flex-end;
+
+    min-height: 48px;
+  }
+}
+
+.wizard__connector--pine {
+  @include vp-1199 {
+    background-color: $color-navy-blue;
+    min-height: 42px;
+    width: 1px;
+    margin-left: 7px;
+  }
+
+  @include vp-767 {
+    min-height: 62px;
+    width: 1px;
+    margin: 0 24px 0 -7px;
+    align-self: center;
+  }
+}
+
+.wizard__connector--boots {
+  @include vp-1199 {
+    background-color: transparent;
+  }
+
+  @include vp-767 {
+    background-color: $color-navy-blue;
+    min-height: 62px;
+    width: 1px;
+    align-self: center;
+  }
+}
+
+.wizard__number {
+  /* Center the content */
+  align-items: center;
+  display: flex;
+
+  /* Rounded border */
+  background-color: $color-navy-blue;
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+
+  @include vp-767 {
+    margin: 13px 0 0 0;
+  }
+}
