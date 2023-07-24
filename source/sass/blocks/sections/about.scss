@@ -1,0 +1,157 @@
+.about {
+  width: 100%;
+  background-color: $color-default-white;
+  color: $color-default-black;
+}
+
+.about__wrapper {
+  position: relative;
+  display: flex;
+  min-height: 474px;
+
+  margin: 0 auto;
+  padding: 0 0 30px 0;
+
+  @include vp-1199 {
+    min-height: 402px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.about__image {
+  position: absolute;
+  width: 808px;
+  height: 474px;
+
+  left: 0;
+
+  @include vp-1199 {
+    width: 475px;
+    height: 402px;
+    top: 10px;
+  }
+
+  @include vp-767 {
+    position: static;
+
+    width: 320px;
+    height: 402px;
+  }
+}
+
+.about__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  padding: 35px 120px 0 735px;
+
+  @include vp-1199 {
+    padding: 0 45px 0 399px;
+
+    gap: 25px;
+  }
+
+  @include vp-767 {
+    padding: 45px 15px 54px 15px;
+
+    gap: 33px;
+  }
+}
+
+.about__text-wrapper h2 {
+  position: relative;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 35px;
+
+  margin: 0;
+  padding: 0 0 28px 0;
+
+  @include vp-1199 {
+    font-size: 25px;
+    line-height: 25px; 
+
+    padding: 0 0 11px 0;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px; 
+    padding: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "О нас";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 55px;
+    opacity: 0.03;
+
+    top: -19px;
+    left: 0;
+
+    @include vp-1199 {
+      font-size: 40px;
+      line-height: 40px; 
+
+      top: -15px;
+    }
+
+    @include vp-767 {
+      font-size: 26px;
+      line-height: 26px;
+
+      top: -6px;
+    }
+  }
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__text h3 {
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+
+  margin: 0;
+  padding: 0 0 15px 0;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 18px;
+
+    padding: 0 0 17px 0;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 16px; 
+  }
+}
+
+.about__text p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+
+  margin: 0;
+  padding: 0;
+
+  @include vp-767 {
+    padding: 0 0 8px 0;
+
+    line-height: 20px;
+  }
+}
