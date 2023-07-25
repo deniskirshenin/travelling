@@ -1,0 +1,119 @@
+.reviews {
+  position: relative;
+  width: 100%;
+  background-color: $color-default-white;
+  color: $color-default-black;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../../../img/clouds-reviews-desktop@1x.png");
+    width: 705px;
+    height: 391px;
+    top: 274px;
+
+    @include retina {
+      background-image: url("../../../img/clouds-reviews-desktop@2x.png");
+    }
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
+}
+
+.reviews__wrapper {
+  padding: 41px 0 30px 120px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  @include vp-1199 {
+    padding: 22px 0 70px 45px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 3px 15px 60px 15px;
+  }
+}
+
+.reviews__wrapper h2 {
+  position: relative;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 35px;
+    
+  margin: 0;
+  padding: 12px 0 27px 0;
+
+  @include vp-1199 {
+    font-size: 25px;
+    line-height: 25px;
+
+    padding: 15px 0 30px 0;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px; 
+
+    padding: 10px 0 33px 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "Отзывы";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 55px;
+    opacity: 0.03;
+
+    top: -19px;
+    left: 0;
+
+    @include vp-1199 {
+      font-size: 40px;
+      line-height: 40px; 
+
+      top: -15px;
+    }
+
+    @include vp-767 {
+      font-size: 26px;
+      line-height: 26px;
+
+      top: -6px;
+    }
+  }
+}
+
+.reviews__button-wrapper {
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+
+  justify-self: end;
+
+  margin: 0 120px 0 0;
+  
+
+  @include vp-1199 {
+    margin: 0 45px 0 0;
+  }
+
+  @include vp-767 {
+    margin: 0;
+  }
+}
+
+.reviews__slider-wrapper {
+  height: auto;
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+}

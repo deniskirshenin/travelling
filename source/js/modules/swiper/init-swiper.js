@@ -11,6 +11,10 @@ const training = document.querySelector('.training__coaches');
 const trainingButtonPrev = document.querySelector('.training__button-prev');
 const trainingButtonNext = document.querySelector('.training__button-next');
 
+const reviews = document.querySelector('.reviews__wrapper');
+const reviewsButtonPrev = document.querySelector('.reviews__button-prev');
+const reviewsButtonNext = document.querySelector('.reviews__button-next');
+
 const initHeroSwiper = () => new Swiper(hero, {
   direction: 'horizontal',
   slidesPerView: 1,
@@ -65,4 +69,26 @@ const initTrainingSwiper = () => new Swiper(training, {
   },
 });
 
-export {initHeroSwiper, initToursSwiper, initTrainingSwiper};
+const initReviewsSwiper = () => new Swiper(reviews, {
+  direction: 'horizontal',
+  breakpoints: {
+    1200: {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+  },
+  navigation: {
+    nextEl: reviewsButtonNext,
+    prevEl: reviewsButtonPrev,
+  },
+});
+
+export {initHeroSwiper, initToursSwiper, initTrainingSwiper, initReviewsSwiper};
