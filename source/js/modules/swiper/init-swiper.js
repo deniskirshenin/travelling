@@ -15,9 +15,15 @@ const reviews = document.querySelector('.reviews__wrapper');
 const reviewsButtonPrev = document.querySelector('.reviews__button-prev');
 const reviewsButtonNext = document.querySelector('.reviews__button-next');
 
+const advantages = document.querySelector('.advantages__wrapper');
+let advantagesSwiper;
+const advantagesButtonPrev = document.querySelector('.advantages__button-prev');
+const advantagesButtonNext = document.querySelector('.advantages__button-next');
+
 const initHeroSwiper = () => new Swiper(hero, {
   direction: 'horizontal',
   slidesPerView: 1,
+  speed: 300,
   pagination: {
     el: heroPagination,
     clickable: true,
@@ -91,4 +97,28 @@ const initReviewsSwiper = () => new Swiper(reviews, {
   },
 });
 
-export {initHeroSwiper, initToursSwiper, initTrainingSwiper, initReviewsSwiper};
+const initAdvantagesSwiper = () => {
+  const initSwiper = () => {
+    if (window.innerWidth > 1200 && !advantagesSwiper) {
+      advantagesSwiper = new Swiper(advantages, {
+        direction: 'horizontal',
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        initialSlide: 2,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: advantagesButtonNext,
+          prevEl: advantagesButtonPrev,
+        },
+      });
+    } else if (window.innerWidth < 1200 && advantagesSwiper) {
+      advantagesSwiper.destroy();
+    }
+  };
+  initSwiper();
+  window.addEventListener('resize', () => {
+    initSwiper();
+  });
+};
+
+export {initHeroSwiper, initToursSwiper, initTrainingSwiper, initReviewsSwiper, initAdvantagesSwiper};

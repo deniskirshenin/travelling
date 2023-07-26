@@ -1411,6 +1411,87 @@ button,
   }
 }
 
+.advantage-card {
+  max-width: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  padding: 39px 19px;
+}
+@media (max-width: 1199px) {
+  .advantage-card {
+    max-width: 324px;
+    min-height: 272px;
+    padding: 29px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .advantage-card {
+    max-width: 290px;
+    min-height: 244px;
+    padding: 19px 9px;
+  }
+}
+
+.advantage-card svg {
+  margin: 0 auto 29px auto;
+}
+@media (max-width: 1199px) {
+  .advantage-card svg {
+    margin: 0 auto 25px auto;
+    width: 48px;
+    height: 48px;
+  }
+}
+@media (max-width: 767px) {
+  .advantage-card svg {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.advantage-card h3 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  margin: 0 auto 16px auto;
+}
+@media (max-width: 1199px) {
+  .advantage-card h3 {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0 auto 15px auto;
+  }
+}
+@media (max-width: 767px) {
+  .advantage-card h3 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.advantage-card p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  margin: 0;
+}
+@media (max-width: 1199px) {
+  .advantage-card p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
 .audio-player {
   position: absolute;
   right: 120px;
@@ -3230,6 +3311,136 @@ button,
   }
 }
 
+.advantages {
+  width: 100%;
+  background-color: #ffffff;
+  color: #2d383f;
+}
+
+.advantages__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 45px;
+  padding: 105px 0 107px 0;
+}
+@media (max-width: 1199px) {
+  .advantages__wrapper {
+    padding: 16px 45px 70px 45px;
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__wrapper {
+    padding: 0 15px 60px 15px;
+    gap: 15px;
+    width: 320px;
+  }
+}
+
+.advantages__wrapper h2 {
+  position: relative;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 35px;
+  margin: 0 auto 2px auto;
+}
+@media (max-width: 1199px) {
+  .advantages__wrapper h2 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__wrapper h2 {
+    font-size: 22px;
+    line-height: 22px;
+    margin: 0 auto 15px auto;
+  }
+}
+.advantages__wrapper h2::after {
+  position: absolute;
+  content: "Преимущества";
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 55px;
+  opacity: 0.03;
+  top: -19px;
+  left: 0;
+}
+@media (max-width: 1199px) {
+  .advantages__wrapper h2::after {
+    font-size: 40px;
+    line-height: 40px;
+    top: -15px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__wrapper h2::after {
+    font-size: 26px;
+    line-height: 26px;
+    top: -7px;
+  }
+}
+
+.advantages__button-wrapper {
+  margin: 5px auto 0 auto;
+}
+@media (max-width: 1199px) {
+  .advantages__button-wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .advantages__slider-wrapper {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: dense;
+  }
+}
+
+@media (max-width: 1199px) {
+  .advantages .swiper-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 678px;
+    gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages .swiper-wrapper {
+    width: 290px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 15px;
+  }
+}
+
 .footer {
   width: 100%;
   margin: 0 auto;
@@ -3347,7 +3558,7 @@ button,
   .reviews__wrapper {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
-    padding: 3px 15px 60px 15px;
+    padding: 3px 15px 33px 15px;
   }
 }
 

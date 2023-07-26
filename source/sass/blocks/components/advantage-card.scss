@@ -1,0 +1,75 @@
+.advantage-card {
+  max-width: 380px;
+
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $color-blue-opacity;
+
+  padding: 39px 19px;
+
+  @include vp-1199 {
+    max-width: 324px;
+    min-height: 272px;
+
+    padding: 29px 20px;
+  }
+
+  @include vp-767 {
+    max-width: 290px;
+    min-height: 244px;
+
+    padding: 19px 9px;
+  }
+}
+
+.advantage-card svg {
+  margin: 0 auto 29px auto;
+
+  @include vp-1199 {
+    margin: 0 auto 25px auto;
+    width: 48px;
+    height: 48px;
+  }
+
+  @include vp-767 {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.advantage-card h3 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+
+  margin: 0 auto 16px auto;
+
+  @include vp-1199 {
+    font-size: 16px;
+    line-height: 16px;
+
+    margin: 0 auto 15px auto;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px; 
+  }
+}
+
+.advantage-card p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+
+  margin: 0;
+
+  @include vp-1199 {
+    font-size: 12px;
+    line-height: 18px; 
+  }
+}

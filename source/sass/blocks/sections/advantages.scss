@@ -1,0 +1,114 @@
+.advantages {
+  width: 100%;
+  background-color: $color-default-white;
+  color: $color-default-black;
+}
+
+.advantages__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+
+  padding: 105px 0 107px 0;
+
+  @include vp-1199 {
+    padding: 16px 45px 70px 45px;
+    width: 768px;
+
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    padding: 0 15px 60px 15px;
+
+    gap: 15px;
+
+    width: 320px;
+  }
+}
+
+.advantages__wrapper h2 {
+  position: relative;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 35px;
+
+  margin: 0 auto 2px auto;
+
+  @include vp-1199 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+
+    margin: 0 auto 15px auto;
+  }
+
+  &::after {
+    position: absolute;
+    content: "Преимущества";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 55px;
+    opacity: 0.03;
+
+    top: -19px;
+    left: 0;
+
+    @include vp-1199 {
+      font-size: 40px;
+      line-height: 40px;
+
+      top: -15px;
+    }
+
+    @include vp-767 {
+      font-size: 26px;
+      line-height: 26px;
+
+      top: -7px;
+    }
+  }
+}
+
+.advantages__button-wrapper {
+  margin: 5px auto 0 auto;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.advantages__slider-wrapper {
+  @include vp-1199 {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-auto-flow: dense;
+  }
+}
+
+.advantages .swiper-wrapper {
+  @include vp-1199 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    width: 678px;
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    gap: 15px;
+  }
+}
