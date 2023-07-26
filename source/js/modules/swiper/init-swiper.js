@@ -20,6 +20,10 @@ let advantagesSwiper;
 const advantagesButtonPrev = document.querySelector('.advantages__button-prev');
 const advantagesButtonNext = document.querySelector('.advantages__button-next');
 
+const gallery = document.querySelector('.gallery__wrapper');
+const galleryButtonPrev = document.querySelector('.gallery__button-prev');
+const galleryButtonNext = document.querySelector('.gallery__button-next');
+
 const initHeroSwiper = () => new Swiper(hero, {
   direction: 'horizontal',
   slidesPerView: 1,
@@ -102,6 +106,7 @@ const initAdvantagesSwiper = () => {
     if (window.innerWidth > 1200 && !advantagesSwiper) {
       advantagesSwiper = new Swiper(advantages, {
         direction: 'horizontal',
+        loop: true,
         slidesPerView: 'auto',
         centeredSlides: true,
         initialSlide: 2,
@@ -121,4 +126,26 @@ const initAdvantagesSwiper = () => {
   });
 };
 
-export {initHeroSwiper, initToursSwiper, initTrainingSwiper, initReviewsSwiper, initAdvantagesSwiper};
+const initGallerySwiper = () => new Swiper(gallery, {
+  direction: 'horizontal',
+  breakpoints: {
+    1200: {
+      slidesPerView: 'auto',
+      spaceBetween: 5,
+    },
+    768: {
+      slidesPerView: 'auto',
+      spaceBetween: 5,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 5,
+    },
+  },
+  navigation: {
+    nextEl: galleryButtonNext,
+    prevEl: galleryButtonPrev,
+  },
+});
+
+export {initHeroSwiper, initToursSwiper, initTrainingSwiper, initReviewsSwiper, initAdvantagesSwiper, initGallerySwiper};

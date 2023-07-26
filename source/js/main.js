@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {openClick} from './modules/menu/init-menu';
-import {initAdvantagesSwiper, initHeroSwiper, initReviewsSwiper, initToursSwiper, initTrainingSwiper} from './modules/swiper/init-swiper';
+import {initAdvantagesSwiper, initGallerySwiper, initHeroSwiper, initReviewsSwiper, initToursSwiper, initTrainingSwiper} from './modules/swiper/init-swiper';
 import {onPlayClick} from './modules/video/init-video';
 
 // ---------------------------------
@@ -29,6 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initTrainingSwiper();
     initReviewsSwiper();
     initAdvantagesSwiper();
+    initGallerySwiper();
   });
 });
 
