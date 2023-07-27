@@ -1,5 +1,5 @@
 .logo {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 
@@ -15,9 +15,13 @@
   }
 
   &--footer {
+    margin: 0 100px 0 0;
+
     @include vp-1199 {
       grid-column: 1 / 2;
       grid-row: 1 / 2;
+
+      margin: 0;
     }
 
     @include vp-1199 {

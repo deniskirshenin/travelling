@@ -5,12 +5,14 @@ const navLink = document.querySelectorAll('.nav__link');
 const navTel = document.querySelector('.nav__tel');
 const openIcon = document.querySelector('.nav__button-open-icon');
 const closeIcon = document.querySelector('.nav__button-close-icon');
-const nav = document.querySelector('.header');
+const header = document.querySelector('.header');
+const nav = document.querySelector('.nav');
 
 const openClick = () => {
   menuButton.addEventListener('click', () => {
     if (menuButton.classList.contains('nav__button--open')) {
-      nav.classList.add('header--opened');
+      nav.classList.add('nav--open');
+      header.classList.add('header--opened');
       navList.classList.remove('nav__list--close');
       navList.classList.add('nav__list--open');
       menuButton.classList.remove('nav__button--open');
@@ -27,7 +29,8 @@ const openClick = () => {
         link.classList.remove('btn--menu-link-dark');
       });
     } else if (menuButton.classList.contains('nav__button--close')) {
-      nav.classList.remove('header--opened');
+      nav.classList.remove('nav--open');
+      header.classList.remove('header--opened');
       navList.classList.add('nav__list--close');
       navList.classList.remove('nav__list--open');
       menuButton.classList.add('nav__button--open');
