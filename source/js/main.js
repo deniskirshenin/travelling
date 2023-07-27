@@ -3,6 +3,7 @@ import {Form} from './modules/form-validate/form';
 import {openClick} from './modules/menu/init-menu';
 import {initAdvantagesSwiper, initGallerySwiper, initHeroSwiper, initReviewsSwiper, initToursSwiper, initTrainingSwiper} from './modules/swiper/init-swiper';
 import {onPlayClick} from './modules/video/init-video';
+import {initMap} from './modules/map/init-map';
 
 // ---------------------------------
 
@@ -30,6 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initReviewsSwiper();
     initAdvantagesSwiper();
     initGallerySwiper();
+    initMap();
   });
 });
 
