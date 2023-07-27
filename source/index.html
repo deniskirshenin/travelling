@@ -846,6 +846,27 @@
               </div>
           </div>
         </section>
+        <section class="questions">
+          <div class="questions__wrapper">
+            <h2>Остались вопросы?</h2>
+            <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+            <div class="questions__form" data-form-validate data-callback="base">
+              <form action="">
+                <div class="custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                  <label for="name">
+                    <input type="text" name="name" id="name" placeholder="Как к вам обращаться?" required>
+                  </label>
+                </div>
+                <div class="custom-input" data-validate-type="phone" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                  <label for="tel">
+                    <input type="tel" name="tel" id="tel" placeholder="Телефон" required>
+                  </label>
+                </div>
+                <button class="btn questions__button" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="container">
