@@ -25,22 +25,22 @@
   &--elbrus {
     background-image: url("../img/elbrus-desktop@1x.webp");
 
+    @include retina {
+      background-image: url("../img/elbrus-desktop@2x.webp");
+    }
+
     @include vp-1199 {
       background-image: url("../img/elbrus-tablet@1x.webp");
+
+      @include retina {
+        background-image: url("../img/elbrus-tablet@2x.webp");
+      }
     }
 
     @include vp-767 {
       background-image: url("../img/elbrus-mobile@1x.webp");
-    }
 
-    @include retina {
-      background-image: url("../img/elbrus-desktop@2x.webp");
-
-      @include vp-1199 {
-        background-image: url("../img/elbrus-tablet@2x.webp");
-      }
-
-      @include vp-767 {
+      @include retina {
         background-image: url("../img/elbrus-mobile@2x.webp");
       }
     }
@@ -49,22 +49,22 @@
   &--altay {
     background-image: url("../img/beluha-desktop@1x.webp");
 
+    @include retina {
+      background-image: url("../img/beluha-desktop@2x.webp");
+    }
+
     @include vp-1199 {
       background-image: url("../img/beluha-tablet@1x.webp");
+
+      @include retina {
+        background-image: url("../img/beluha-tablet@2x.webp");
+      }
     }
 
     @include vp-767 {
       background-image: url("../img/beluha-mobile@1x.webp");
-    }
 
-    @include retina {
-      background-image: url("../img/beluha-desktop@2x.webp");
-
-      @include vp-1199 {
-        background-image: url("../img/beluha-tablet@2x.webp");
-      }
-
-      @include vp-767 {
+      @include retina {
         background-image: url("../img/beluha-mobile@1x.webp");
       }
     }
@@ -73,22 +73,22 @@
   &--fisht {
     background-image: url("../img/fisht-desktop@1x.webp");
 
+    @include retina {
+      background-image: url("../img/fisht-desktop@2x.webp");
+    }
+
     @include vp-1199 {
       background-image: url("../img/fisht-tablet@1x.webp");
+
+      @include retina {
+        background-image: url("../img/fisht-tablet@2x.webp");
+      }
     }
 
     @include vp-767 {
       background-image: url("../img/beluha-mobile@1x.webp");
-    }
 
-    @include retina {
-      background-image: url("../img/fisht-desktop@2x.webp");
-
-      @include vp-1199 {
-        background-image: url("../img/fisht-tablet@2x.webp");
-      }
-
-      @include vp-767 {
+      @include retina {
         background-image: url("../img/beluha-mobile@2x.webp");
       }
     }

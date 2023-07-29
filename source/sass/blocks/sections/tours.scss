@@ -20,10 +20,18 @@
 
     z-index: 1;
 
+    @include retina {
+      background-image: url("../img/clouds-desktop@2x.webp");
+    }
+
     @include vp-1199 {
       background-image: url("../img/clouds-tablet@1x.webp");
       width: 294px;
       top: -95px;
+
+      @include retina {
+        background-image: url("../img/clouds-tablet@2x.webp");
+      }
     }
 
     @include vp-767 {
@@ -33,16 +41,8 @@
       top: 137px;
 
       z-index: 0;
-    }
 
-    @include retina {
-      background-image: url("../img/clouds-desktop@2x.webp");
-
-      @include vp-1199 {
-        background-image: url("../img/clouds-tablet@2x.webp");
-      }
-
-      @include vp-767 {
+      @include retina {
         background-image: url("../img/clouds-mobile@2x.webp");
       }
     }
