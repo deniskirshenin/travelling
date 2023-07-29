@@ -19,6 +19,8 @@
 // Blocks
 // ---------------------------------
 
+@import "blocks/components/btn.scss";
+@import "blocks/components/custom-input.scss";
 @import "blocks/sections/hero.scss";
 @import "blocks/sections/questions.scss";
 @import "blocks/sections/reviews.scss";
@@ -27,8 +29,6 @@
 @import "blocks/sections/training.scss";
 @import "blocks/components/advantage-card.scss";
 @import "blocks/components/audio-player.scss";
-@import "blocks/components/btn.scss";
-@import "blocks/components/custom-input.scss";
 @import "blocks/components/map.scss";
 @import "blocks/components/nav.scss";
 @import "blocks/components/photo-cards.scss";
