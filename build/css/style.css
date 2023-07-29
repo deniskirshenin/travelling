@@ -5423,7 +5423,9 @@ button,
   }
 
   .coach-card p {
+    font-size: 12px;
     line-height: 18px;
+    padding: 0;
   }
 
   .coach-card__image {
@@ -6382,6 +6384,12 @@ button,
     max-width: 290px;
     min-height: 385px;
     padding: 20px;
+  }
+
+  .coach-card p {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0;
   }
 
   .coach-card__link {
