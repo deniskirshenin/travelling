@@ -7,14 +7,14 @@
   &::after {
     position: absolute;
     content: "";
-    background-image: url("../../../img/clouds-reviews-desktop@1x.webp");
+    background-image: url("../img/clouds-reviews-desktop@1x.webp");
     width: 705px;
     height: 391px;
     top: 274px;
     left: 0;
 
     @include retina {
-      background-image: url("../../../img/clouds-reviews-desktop@2x.webp");
+      background-image: url("../img/clouds-reviews-desktop@2x.webp");
     }
 
     @include vp-1199 {
