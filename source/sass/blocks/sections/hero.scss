@@ -12,7 +12,6 @@
 }
 
 .hero__slide {
-  position: relative;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: $black-to-right;
@@ -45,79 +44,80 @@
   }
 
   &--caucausus {
-    background-image: url("../../../img/caucausus-desktop@1x.jpg");
+    background-image: url("../../../img/caucausus-desktop@1x.webp");
 
     @include vp-1199 {
-      background-image: url("../../../img/caucausus-tablet@1x.jpg");
+      background-image: url("../../../img/caucausus-tablet@1x.webp");
     }
 
     @include vp-767 {
-      background-image: url("../../../img/caucausus-mobile@1x.jpg");
+      background-image: url("../../../img/caucausus-mobile@1x.webp");
     }
 
     @include retina {
-      background-image: url("../../../img/caucausus-desktop@2x.jpg");
+      background-image: url("../../../img/caucausus-desktop@2x.webp");
 
       @include vp-1199 {
-        background-image: url("../../../img/caucausus-tablet@2x.jpg");
+        background-image: url("../../../img/caucausus-tablet@2x.webp");
       }
 
       @include vp-767 {
-        background-image: url("../../../img/caucausus-mobile@2x.jpg");
+        background-image: url("../../../img/caucausus-mobile@2x.webp");
       }
     }
   }
 
   &--kamchatka {
-    background-image: url("../../../img/kamchatka-desktop@1x.jpg");
+    background-image: url("../../../img/kamchatka-desktop@1x.webp");
 
     @include vp-1199 {
-      background-image: url("../../../img/kamchatka-tablet@1x.jpg");
+      background-image: url("../../../img/kamchatka-tablet@1x.webp");
     }
 
     @include vp-767 {
-      background-image: url("../../../img/kamchatka-mobile@1x.jpg");
+      background-image: url("../../../img/kamchatka-mobile@1x.webp");
     }
 
     @include retina {
-      background-image: url("../../../img/kamchatka-desktop@2x.jpg");
+      background-image: url("../../../img/kamchatka-desktop@2x.webp");
 
       @include vp-1199 {
-        background-image: url("../../../img/kamchatka-tablet@2x.jpg");
+        background-image: url("../../../img/kamchatka-tablet@2x.webp");
       }
 
       @include vp-767 {
-        background-image: url("../../../img/kamchatka-mobile@1x.jpg");
+        background-image: url("../../../img/kamchatka-mobile@1x.webp");
       }
     }
   }
 
   &--altay {
-    background-image: url("../../../img/altay-desktop@1x.jpg");
+    background-image: url("../../../img/altay-desktop@1x.webp");
 
     @include vp-1199 {
-      background-image: url("../../../img/altay-tablet@1x.jpg");
+      background-image: url("../../../img/altay-tablet@1x.webp");
     }
 
     @include vp-767 {
-      background-image: url("../../../img/altay-mobile@1x.jpg");
+      background-image: url("../../../img/altay-mobile@1x.webp");
     }
 
     @include retina {
-      background-image: url("../../../img/altay-desktop@2x.jpg");
+      background-image: url("../../../img/altay-desktop@2x.webp");
 
       @include vp-1199 {
-        background-image: url("../../../img/altay-tablet@2x.jpg");
+        background-image: url("../../../img/altay-tablet@2x.webp");
       }
 
       @include vp-767 {
-        background-image: url("../../../img/altay-mobile@1x.jpg");
+        background-image: url("../../../img/altay-mobile@1x.webp");
       }
     }
   }
 }
 
 .hero__slide-wrapper {
+  position: relative;
   margin: 0 auto;
   width: 1200px;
 
@@ -146,6 +146,8 @@
   color: $color-default-white;
   z-index: 3;
 
+  word-break: break-all;
+
   @include vp-1199 {
     font-size: 56px;
     line-height: 56px;
@@ -157,6 +159,7 @@
   @include vp-767 {
     font-size: 30px;
     line-height: 30px;
+    word-break: normal;
   }
 }
 
@@ -173,7 +176,7 @@
 
   @include vp-1199 {
     font-size: 17px;
-    line-height: 24px; 
+    line-height: 24px;
     text-align: center;
 
     padding: 0 0 25px 0;
@@ -188,6 +191,7 @@
 
 .hero__slide-details {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 
   @include vp-1199 {
@@ -205,7 +209,7 @@
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 16px; 
+  line-height: 16px;
 
   color: $color-default-white;
 
@@ -240,9 +244,10 @@
   justify-content: flex-end;
   gap: 5px;
   position: absolute;
-  left: auto;
-  right: 120px;
+  left: 0;
+  right: 8%;
   bottom: 95px;
+  width: auto;
 
   margin: 0;
 
@@ -289,18 +294,14 @@
   background: $color-default-white;
 }
 
-.hero__slide--kamchatka {
-  .hero__button {
-    @include vp-767 {
-      margin-bottom: 122px;
-    }
+.hero__slide--kamchatka .hero__button {
+  @include vp-767 {
+    margin-bottom: 122px;
   }
 }
 
-.hero__slide--altay {
-  .hero__button {
-    @include vp-767 {
-      margin-bottom: 122px;
-    }
+.hero__slide--altay .hero__button {
+  @include vp-767 {
+    margin-bottom: 122px;
   }
 }

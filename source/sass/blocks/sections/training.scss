@@ -67,6 +67,8 @@
   margin: 0;
   padding: 0 0 31px 0;
 
+  word-break: break-all;
+
   @include vp-1199 {
     font-size: 25px;
     font-style: normal;
@@ -108,7 +110,7 @@
 
     @include vp-767 {
       font-size: 26px;
-      line-height: 26px; 
+      line-height: 26px;
       top: -6px;
     }
   }
@@ -165,7 +167,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 21px;
-  
+
   margin: 0;
   padding: 7px 0 42px 0;
 
@@ -233,7 +235,7 @@
 
   @include vp-1199 {
     font-size: 18px;
-    line-height: 18px; 
+    line-height: 18px;
 
     padding: 0 0 40px 0;
   }
@@ -257,7 +259,7 @@
 
   @include vp-1199 {
     grid-template-columns: 355px auto;
-    grid-template-rows: 66px auto;
+    grid-template-rows: minmax(66px, auto) auto;
   }
 
   @include vp-767 {
@@ -349,12 +351,12 @@
 
   @include vp-1199 {
     font-size: 14px;
-    line-height: 22px; 
+    line-height: 22px;
   }
 
   @include vp-767 {
     font-size: 12px;
-    line-height: 18px; 
+    line-height: 18px;
   }
 }
 

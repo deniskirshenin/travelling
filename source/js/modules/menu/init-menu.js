@@ -7,10 +7,12 @@ const openIcon = document.querySelector('.nav__button-open-icon');
 const closeIcon = document.querySelector('.nav__button-close-icon');
 const header = document.querySelector('.header');
 const nav = document.querySelector('.nav');
+const wrapper = document.querySelector('.menu-open-container');
 
 const openClick = () => {
   menuButton.addEventListener('click', () => {
     if (menuButton.classList.contains('nav__button--open')) {
+      wrapper.classList.remove('menu-open-container--close');
       nav.classList.add('nav--open');
       header.classList.add('header--opened');
       navList.classList.remove('nav__list--close');
@@ -29,6 +31,7 @@ const openClick = () => {
         link.classList.remove('btn--menu-link-dark');
       });
     } else if (menuButton.classList.contains('nav__button--close')) {
+      wrapper.classList.add('menu-open-container--close');
       nav.classList.remove('nav--open');
       header.classList.remove('header--opened');
       navList.classList.add('nav__list--close');

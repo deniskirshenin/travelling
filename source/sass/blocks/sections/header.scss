@@ -8,17 +8,26 @@
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 3;
-}
 
-.header--opened {
-  @include vp-1199 {
-    height: auto;
-    left: 0;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    width: 100%;
-    background-color: $color-default-white;
-    z-index: 2;
+  &--opened {
+    @include vp-1199 {
+      height: auto;
+      position: fixed;
+      left: 50%;
+      top: 0;
+      width: 100%;
+      background-color: $color-default-white;
+      color: $color-default-black;
+      z-index: 4;
+    }
+  }
+
+  &--nojs {
+    @include vp-1199 {
+      position: static;
+      transform: none;
+      background-color: $color-default-white;
+      color: $color-default-black;
+    }
   }
 }

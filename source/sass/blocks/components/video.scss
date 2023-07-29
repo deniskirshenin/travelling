@@ -1,7 +1,7 @@
 .video {
   position: absolute;
-  top: 301px;
-  right: 120px;
+  top: 121px;
+  right: 0;
   z-index: 0;
 
   @include vp-1199 {
@@ -45,7 +45,7 @@
   cursor: pointer;
 
   @include vp-1199 {
-    top: 64%;
+    top: 62%;
   }
 
   @include hover-focus {

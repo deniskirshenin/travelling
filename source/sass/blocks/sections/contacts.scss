@@ -16,7 +16,7 @@
   @include vp-1199 {
     width: 678px;
 
-    padding: 80px 0 70px 0;
+    padding: 82px 0 70px 0;
 
     display: flex;
     flex-direction: column;
@@ -49,6 +49,8 @@
 
   padding: 3px 0 24px 0;
   margin: 0;
+
+  word-break: break-all;
 
   @include vp-1199 {
     font-size: 25px;
@@ -116,6 +118,7 @@
 .contacts__info {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 
   gap: 35px;
 
@@ -145,6 +148,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 18px;
+  word-break: break-all;
 
   @include vp-1199 {
     font-size: 16px;
@@ -163,6 +167,7 @@
   font-weight: 400;
   line-height: 24px;
   margin: 0;
+  word-break: break-all;
 
   @include vp-1199 {
     font-size: 14px;
@@ -208,3 +213,12 @@
   }
 }
 
+.contacts__link {
+  @include hover-focus {
+    opacity: 0.7;
+  }
+
+  @include active {
+    opacity: 0.5;
+  }
+}

@@ -11,6 +11,7 @@
     width: 705px;
     height: 391px;
     top: 274px;
+    left: 0;
 
     @include retina {
       background-image: url("../../../img/clouds-reviews-desktop@2x.png");
@@ -29,7 +30,7 @@
   grid-template-columns: repeat(4, 1fr);
 
   @include vp-1199 {
-    padding: 22px 0 70px 45px;
+    padding: 20px 0 70px 45px;
   }
 
   @include vp-767 {
@@ -48,20 +49,23 @@
   font-style: normal;
   font-weight: 800;
   line-height: 35px;
-    
+
   margin: 0;
   padding: 12px 0 27px 0;
+
+  word-break: break-all;
 
   @include vp-1199 {
     font-size: 25px;
     line-height: 25px;
 
     padding: 15px 0 30px 0;
+    word-break: normal;
   }
 
   @include vp-767 {
     font-size: 22px;
-    line-height: 22px; 
+    line-height: 22px;
 
     padding: 10px 0 33px 0;
   }
@@ -80,7 +84,7 @@
 
     @include vp-1199 {
       font-size: 40px;
-      line-height: 40px; 
+      line-height: 40px;
 
       top: -15px;
     }
@@ -100,11 +104,10 @@
 
   justify-self: end;
 
-  margin: 0 120px 0 0;
-  
+  margin: 0;
 
   @include vp-1199 {
-    margin: 0 45px 0 0;
+    margin: 0 0 0 0;
   }
 
   @include vp-767 {
@@ -116,4 +119,21 @@
   height: auto;
   grid-row: 2 / 3;
   grid-column: 1 / -1;
+}
+
+.reviews__header-wrapper {
+  margin: 0 auto 0 0;
+  display: flex;
+  justify-content: space-between;
+
+  grid-column: 1 / -1;
+  width: 1200px;
+
+  @include vp-1199 {
+    width: 678px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+  }
 }

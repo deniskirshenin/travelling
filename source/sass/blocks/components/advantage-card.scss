@@ -10,6 +10,10 @@
   @include vp-1199 {
     max-width: 324px;
     min-height: 272px;
+    height: auto;
+    justify-content: stretch;
+    flex-grow: 1;
+    flex-shrink: 1;
 
     padding: 29px 20px;
   }
@@ -55,7 +59,7 @@
 
   @include vp-767 {
     font-size: 14px;
-    line-height: 14px; 
+    line-height: 14px;
   }
 }
 
@@ -70,6 +74,7 @@
 
   @include vp-1199 {
     font-size: 12px;
-    line-height: 18px; 
+    line-height: 18px;
+    margin: 0 0 auto 0;
   }
 }

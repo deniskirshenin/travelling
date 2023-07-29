@@ -108,7 +108,7 @@
       border: none;
     }
 
-    &::disabled {
+    &:disabled {
       padding: 0;
       color: $color-blue-opacity;
     }

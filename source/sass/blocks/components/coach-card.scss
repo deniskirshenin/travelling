@@ -11,7 +11,7 @@
 
   border: 1px solid $color-default-white;
   background-color: $color-default-white;
-  box-shadow: 0px 0px 30px 0px $color-shadow;
+  box-shadow: 0 0 30px 0 $color-shadow;
 
   @include vp-1199 {
     max-width: 206px;
@@ -38,6 +38,8 @@
   margin: 0;
 
   padding: 2px 0 0 0;
+
+  word-break: break-all;
 
   @include vp-1199 {
     padding: 4px 0 0 0;

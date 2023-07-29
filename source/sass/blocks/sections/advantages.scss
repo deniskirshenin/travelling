@@ -12,7 +12,7 @@
   padding: 105px 0 107px 0;
 
   @include vp-1199 {
-    padding: 16px 45px 63px 45px;
+    padding: 18px 45px 63px 45px;
     width: 768px;
 
     margin: 0 auto;
@@ -34,7 +34,11 @@
   font-weight: 800;
   line-height: 35px;
 
-  margin: 0 auto 2px auto;
+  margin: 0 0 2px 0;
+
+  align-self: center;
+
+  word-break: break-all;
 
   @include vp-1199 {
     font-size: 25px;
@@ -56,6 +60,7 @@
     font-weight: 800;
     line-height: 55px;
     opacity: 0.03;
+    word-break: normal;
 
     top: -19px;
     left: 0;
@@ -81,14 +86,6 @@
 
   @include vp-1199 {
     display: none;
-  }
-}
-
-.advantages__slider-wrapper {
-  @include vp-1199 {
-    grid-template-columns: repeat(2, 1fr);
-    display: grid;
-    grid-auto-flow: dense;
   }
 }
 
