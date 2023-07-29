@@ -186,6 +186,10 @@
   @include vp-1199 {
     display: none;
   }
+
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .nav__list--open {
