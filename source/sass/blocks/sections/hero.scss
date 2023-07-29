@@ -12,9 +12,8 @@
 }
 
 .hero__slide {
+  position: relative;
   background: $black-to-right;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
 
   display: flex;
   flex-direction: column;
@@ -44,80 +43,13 @@
   }
 }
 
-.hero__slide--caucausus {
-  background-image: url("../img/caucausus-desktop@1x.webp");
-
-  @include retina {
-    background-image: url("../img/caucausus-desktop@2x.webp");
-  }
-}
-
-@include vp-1199 {
-  .hero__slide--caucausus {
-    background-image: url("../img/caucausus-tablet@1x.webp");
-
-    @include retina {
-      background-image: url("../img/caucausus-tablet@2x.webp");
-    }
-  }
-}
-
-@include vp-767 {
-  .hero__slide--caucausus {
-    background-image: url("../img/caucausus-mobile@1x.webp");
-
-    @include retina {
-      background-image: url("../img/caucausus-mobile@2x.webp");
-    }
-  }
-}
-
-.hero__slide--kamchatka {
-  background-image: url("../img/kamchatka-desktop@1x.webp");
-
-  @include retina {
-    background-image: url("../img/kamchatka-desktop@2x.webp");
-  }
-
-  @include vp-1199 {
-    background-image: url("../img/kamchatka-tablet@1x.webp");
-
-    @include retina {
-      background-image: url("../img/kamchatka-tablet@2x.webp");
-    }
-  }
-
-  @include vp-767 {
-    background-image: url("../img/kamchatka-mobile@1x.webp");
-
-    @include retina {
-      background-image: url("../img/kamchatka-mobile@1x.webp");
-    }
-  }
-}
-
-.hero__slide--altay {
-  background-image: url("../img/altay-desktop@1x.webp");
-
-  @include retina {
-    background-image: url("../img/altay-desktop@2x.webp");
-  }
-
-  @include vp-1199 {
-    background-image: url("../img/altay-tablet@1x.webp");
-
-    @include retina {
-      background-image: url("../img/altay-tablet@2x.webp");
-    }
-  }
-
-  @include vp-767 {
-    background-image: url("../img/altay-mobile@1x.webp");
-
-    @include vp-767 {
-      background-image: url("../img/altay-mobile@2x.webp");
-    }
-  }
+.hero__slide-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero__slide-wrapper {

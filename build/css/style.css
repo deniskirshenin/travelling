@@ -2297,9 +2297,8 @@ button,
 }
 
 .hero__slide {
+  position: relative;
   background: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2323,16 +2322,14 @@ button,
   margin: 0 auto;
 }
 
-.hero__slide--caucausus {
-  background-image: url("../img/caucausus-desktop@1x.webp");
-}
-
-.hero__slide--kamchatka {
-  background-image: url("../img/kamchatka-desktop@1x.webp");
-}
-
-.hero__slide--altay {
-  background-image: url("../img/altay-desktop@1x.webp");
+.hero__slide-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .hero__slide-wrapper {
@@ -2442,12 +2439,20 @@ button,
 }
 
 .questions {
+  position: relative;
   width: 100%;
-  background-color: rgba(44, 56, 63, 0.3);
-  background-image: url("../img/questions-background-desktop@1x.webp");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   color: #ffffff;
+}
+
+.questions__background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .questions__wrapper {
@@ -3386,12 +3391,15 @@ button,
 }
 
 .photo-cards__image--first {
+  width: 308px;
+  height: 407px;
   top: 21px;
   right: 102px;
-  z-index: -1;
 }
 
 .photo-cards__image--second {
+  width: 277px;
+  height: 366px;
   top: 115px;
   right: 0;
 }
@@ -3471,6 +3479,8 @@ button,
   top: 121px;
   right: 0;
   z-index: 0;
+  width: 482px;
+  height: 317px;
 }
 
 .video__player {
@@ -3599,24 +3609,21 @@ button,
   justify-content: flex-end;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(62%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 62%, rgba(0, 0, 0, 0) 100%);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   max-width: 380px;
   min-height: 412px;
   padding: 30px 20px;
   color: #ffffff;
 }
 
-.tour-card--elbrus {
-  background-image: url("../img/elbrus-desktop@1x.webp");
-}
-
-.tour-card--altay {
-  background-image: url("../img/beluha-desktop@1x.webp");
-}
-
-.tour-card--fisht {
-  background-image: url("../img/fisht-desktop@1x.webp");
+.tour-card__background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .tour-card__about-wrapper {
@@ -4480,18 +4487,6 @@ button,
     align-items: center;
   }
 
-  .hero__slide--caucausus {
-    background-image: url("../img/caucausus-tablet@1x.webp");
-  }
-
-  .hero__slide--kamchatka {
-    background-image: url("../img/kamchatka-tablet@1x.webp");
-  }
-
-  .hero__slide--altay {
-    background-image: url("../img/altay-tablet@1x.webp");
-  }
-
   .hero__slide-wrapper {
     width: 678px;
     display: -webkit-box;
@@ -4537,10 +4532,6 @@ button,
 
   .hero__slide--altay .hero__button {
     margin-bottom: 68px;
-  }
-
-  .questions {
-    background-image: url("../img/questions-background-tablet@1x.webp");
   }
 
   .questions__wrapper {
@@ -5072,18 +5063,6 @@ button,
     padding: 28px 20px;
   }
 
-  .tour-card--elbrus {
-    background-image: url("../img/elbrus-tablet@1x.webp");
-  }
-
-  .tour-card--altay {
-    background-image: url("../img/beluha-tablet@1x.webp");
-  }
-
-  .tour-card--fisht {
-    background-image: url("../img/fisht-tablet@1x.webp");
-  }
-
   .tour-card__about-wrapper {
     gap: 20px;
     margin: 0 0 24px 0;
@@ -5430,40 +5409,6 @@ button,
   }
 }
 
-@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
-  .hero__slide--caucausus {
-    background-image: url("../img/caucausus-tablet@2x.webp");
-  }
-
-  .hero__slide--kamchatka {
-    background-image: url("../img/kamchatka-tablet@2x.webp");
-  }
-
-  .hero__slide--altay {
-    background-image: url("../img/altay-tablet@2x.webp");
-  }
-
-  .questions {
-    background-image: url("../img/questions-background-tablet@2x.webp");
-  }
-
-  .tours::after {
-    background-image: url("../img/clouds-tablet@2x.webp");
-  }
-
-  .tour-card--elbrus {
-    background-image: url("../img/elbrus-tablet@2x.webp");
-  }
-
-  .tour-card--altay {
-    background-image: url("../img/beluha-tablet@2x.webp");
-  }
-
-  .tour-card--fisht {
-    background-image: url("../img/fisht-tablet@2x.webp");
-  }
-}
-
 @media (hover: hover) and (max-width: 1199px) {
   .questions__button:hover:not(.focus-visible) {
     padding: 20px 9px;
@@ -5471,6 +5416,12 @@ button,
 
   .questions__button:hover:not(:disabled) {
     padding: 20px 9px;
+  }
+}
+
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+  .tours::after {
+    background-image: url("../img/clouds-tablet@2x.webp");
   }
 }
 
@@ -5485,18 +5436,6 @@ button,
 
   .hero__slide br {
     display: none;
-  }
-
-  .hero__slide--caucausus {
-    background-image: url("../img/caucausus-mobile@1x.webp");
-  }
-
-  .hero__slide--kamchatka {
-    background-image: url("../img/kamchatka-mobile@1x.webp");
-  }
-
-  .hero__slide--altay {
-    background-image: url("../img/altay-mobile@1x.webp");
   }
 
   .hero__slide-wrapper {
@@ -5541,10 +5480,6 @@ button,
 
   .hero__slide--altay .hero__button {
     margin-bottom: 122px;
-  }
-
-  .questions {
-    background-image: url("../img/questions-background-mobile@1x.webp");
   }
 
   .questions__wrapper {
@@ -6011,18 +5946,6 @@ button,
     padding: 25px 20px;
   }
 
-  .tour-card--elbrus {
-    background-image: url("../img/elbrus-mobile@1x.webp");
-  }
-
-  .tour-card--altay {
-    background-image: url("../img/beluha-mobile@1x.webp");
-  }
-
-  .tour-card--fisht {
-    background-image: url("../img/beluha-mobile@1x.webp");
-  }
-
   .tour-card__about-wrapper {
     display: -ms-grid;
     display: grid;
@@ -6403,42 +6326,6 @@ button,
   }
 }
 
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .hero__slide--caucausus {
-    background-image: url("../img/caucausus-mobile@2x.webp");
-  }
-
-  .hero__slide--kamchatka {
-    background-image: url("../img/kamchatka-mobile@1x.webp");
-  }
-
-  .questions {
-    background-image: url("../img/questions-background-mobile@2x.webp");
-  }
-
-  .tours::after {
-    background-image: url("../img/clouds-mobile@2x.webp");
-  }
-
-  .tour-card--elbrus {
-    background-image: url("../img/elbrus-mobile@2x.webp");
-  }
-
-  .tour-card--altay {
-    background-image: url("../img/beluha-mobile@1x.webp");
-  }
-
-  .tour-card--fisht {
-    background-image: url("../img/beluha-mobile@2x.webp");
-  }
-}
-
-@media (max-width: 767px) and (max-width: 767px) {
-  .hero__slide--altay {
-    background-image: url("../img/altay-mobile@2x.webp");
-  }
-}
-
 @media (max-width: 767px) and (hover: hover) {
   .hero__button:hover:not(.focus-visible) {
     padding: 17px 0;
@@ -6459,54 +6346,18 @@ button,
   }
 }
 
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .tours::after {
+    background-image: url("../img/clouds-mobile@2x.webp");
+  }
+}
+
 @media print {
   /* Prevent printers from removing background-images of controls. */
 
   .leaflet-control {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .hero__slide--caucausus {
-    background-image: url("../img/caucausus-desktop@2x.webp");
-  }
-
-  .hero__slide--kamchatka {
-    background-image: url("../img/kamchatka-desktop@2x.webp");
-  }
-
-  .hero__slide--altay {
-    background-image: url("../img/altay-desktop@2x.webp");
-  }
-
-  .questions {
-    background-image: url("../img/questions-background-desktop@2x.webp");
-  }
-
-  .reviews::after {
-    background-image: url("../img/clouds-reviews-desktop@2x.webp");
-  }
-
-  .tours::after {
-    background-image: url("../img/clouds-desktop@2x.webp");
-  }
-
-  .tours::before {
-    background-image: url("../img/clouds-small-desktop@2x.webp");
-  }
-
-  .tour-card--elbrus {
-    background-image: url("../img/elbrus-desktop@2x.webp");
-  }
-
-  .tour-card--altay {
-    background-image: url("../img/beluha-desktop@2x.webp");
-  }
-
-  .tour-card--fisht {
-    background-image: url("../img/fisht-desktop@2x.webp");
   }
 }
 
@@ -6706,5 +6557,19 @@ button,
 
   .coach-card__link:hover:not(:disabled) {
     padding: 7px 4px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .reviews::after {
+    background-image: url("../img/clouds-reviews-desktop@2x.webp");
+  }
+
+  .tours::after {
+    background-image: url("../img/clouds-desktop@2x.webp");
+  }
+
+  .tours::before {
+    background-image: url("../img/clouds-small-desktop@2x.webp");
   }
 }

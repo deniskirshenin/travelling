@@ -3,6 +3,8 @@
   top: 121px;
   right: 0;
   z-index: 0;
+  width: 482px;
+  height: 317px;
 
   @include vp-1199 {
     position: static;

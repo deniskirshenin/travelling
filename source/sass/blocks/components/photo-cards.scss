@@ -19,9 +19,10 @@
   }
 
   &--first {
+    width: 308px;
+    height: 407px;
     top: 21px;
     right: 102px;
-    z-index: -1;
 
     @include vp-1199 {
       height: 351px;
@@ -31,6 +32,8 @@
   }
 
   &--second {
+    width: 277px;
+    height: 366px;
     top: 115px;
     right: 0;
 
