@@ -6,10 +6,6 @@
   background-size: 100% 100%;
   color: $color-default-white;
 
-  @include retina {
-    background-image: url("../img/questions-background-desktop@2x.webp");
-  }
-
   @include vp-1199 {
     background-image: url("../img/questions-background-tablet@1x.webp");
 
@@ -24,6 +20,10 @@
     @include retina {
       background-image: url("../img/questions-background-mobile@2x.webp");
     }
+  }
+
+  @include retina {
+    background-image: url("../img/questions-background-desktop@2x.webp");
   }
 }
 
