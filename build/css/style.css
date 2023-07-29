@@ -3822,7 +3822,7 @@ button,
 .reviews::after {
   position: absolute;
   content: "";
-  background-image: url("../../../img/clouds-reviews-desktop@1x.png");
+  background-image: url("../../../img/clouds-reviews-desktop@1x.webp");
   width: 705px;
   height: 391px;
   top: 274px;
@@ -3909,7 +3909,7 @@ button,
 .tours::after {
   position: absolute;
   content: "";
-  background-image: url("../../../img/clouds-desktop@1x.png");
+  background-image: url("../../../img/clouds-desktop@1x.webp");
   background-size: 100% 100%;
   width: 602px;
   height: 1364px;
@@ -3921,7 +3921,7 @@ button,
 .tours::before {
   position: absolute;
   content: "";
-  background-image: url("../../../img/clouds-small-desktop@1x.png");
+  background-image: url("../../../img/clouds-small-desktop@1x.webp");
   background-size: 100% 100%;
   width: 418px;
   height: 279px;
@@ -5199,7 +5199,7 @@ button,
   }
 
   .tours::after {
-    background-image: url("../../../img/clouds-tablet@1x.png");
+    background-image: url("../../../img/clouds-tablet@1x.webp");
     width: 294px;
     top: -95px;
   }
@@ -5441,7 +5441,7 @@ button,
   }
 
   .tours::after {
-    background-image: url("../../../img/clouds-tablet@2x.png");
+    background-image: url("../../../img/clouds-tablet@2x.webp");
   }
 
   .hero__slide--caucausus {
@@ -6133,7 +6133,7 @@ button,
   }
 
   .tours::after {
-    background-image: url("../../../img/clouds-mobile@1x.png");
+    background-image: url("../../../img/clouds-mobile@1x.webp");
     width: 177px;
     height: 595px;
     top: 137px;
@@ -6398,7 +6398,7 @@ button,
   }
 
   .tours::after {
-    background-image: url("../../../img/clouds-mobile@2x.png");
+    background-image: url("../../../img/clouds-mobile@2x.webp");
   }
 
   .hero__slide--caucausus {
@@ -6660,15 +6660,15 @@ button,
   }
 
   .reviews::after {
-    background-image: url("../../../img/clouds-reviews-desktop@2x.png");
+    background-image: url("../../../img/clouds-reviews-desktop@2x.webp");
   }
 
   .tours::after {
-    background-image: url("../../../img/clouds-desktop@2x.png");
+    background-image: url("../../../img/clouds-desktop@2x.webp");
   }
 
   .tours::before {
-    background-image: url("../../../img/clouds-small-desktop@2x.png");
+    background-image: url("../../../img/clouds-small-desktop@2x.webp");
   }
 
   .hero__slide--caucausus {
