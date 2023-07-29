@@ -1,13 +1,13 @@
 .audio-player {
   position: absolute;
-  right: 120px;
-  top: 301px;
+  right: 0;
+  top: 120px;
   width: 340px;
   height: 220px;
 
   @include vp-1199 {
     position: static;
-    margin: 0 auto 220px auto;
+    margin: 0 auto 210px auto;
   }
 
   @include vp-767 {

@@ -146,7 +146,7 @@
   color: $color-default-white;
   z-index: 3;
 
-  word-break: break-all;
+  word-break: normal;
 
   @include vp-1199 {
     font-size: 56px;
@@ -301,6 +301,10 @@
 }
 
 .hero__slide--altay .hero__button {
+  @include vp-1199 {
+    margin-bottom: 68px;
+  }
+
   @include vp-767 {
     margin-bottom: 122px;
   }

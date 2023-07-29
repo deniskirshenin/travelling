@@ -19,21 +19,25 @@
   }
 
   &--first {
-    top: 202px;
-    right: 222px;
+    top: 21px;
+    right: 102px;
     z-index: -1;
 
     @include vp-1199 {
-      transform: translateY(-10px);
+      height: 351px;
+      width: 266px;
+      transform: translate(35px, -16px);
     }
   }
 
   &--second {
-    top: 295px;
-    right: 120px;
+    top: 115px;
+    right: 0;
 
     @include vp-1199 {
-      transform: translate(-60px, 25px);
+      width: 236px;
+      height: 312px;
+      transform: translate(-24px, 39px);
     }
   }
 }

@@ -2318,8 +2318,8 @@ button,
 
 .audio-player {
   position: absolute;
-  right: 120px;
-  top: 301px;
+  right: 0;
+  top: 120px;
   width: 340px;
   height: 220px;
 }
@@ -2788,14 +2788,14 @@ button,
 }
 
 .photo-cards__image--first {
-  top: 202px;
-  right: 222px;
+  top: 21px;
+  right: 102px;
   z-index: -1;
 }
 
 .photo-cards__image--second {
-  top: 295px;
-  right: 120px;
+  top: 115px;
+  right: 0;
 }
 
 .review-card {
@@ -4251,7 +4251,7 @@ button,
   margin: 0;
   color: #ffffff;
   z-index: 3;
-  word-break: break-all;
+  word-break: normal;
 }
 
 .hero__slide p {
@@ -4504,7 +4504,7 @@ button,
 
   .audio-player {
     position: static;
-    margin: 0 auto 220px auto;
+    margin: 0 auto 210px auto;
   }
 
   .custom-input label {
@@ -4691,15 +4691,19 @@ button,
   }
 
   .photo-cards__image--first {
-    -webkit-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    transform: translateY(-10px);
+    height: 351px;
+    width: 266px;
+    -webkit-transform: translate(35px, -16px);
+    -ms-transform: translate(35px, -16px);
+    transform: translate(35px, -16px);
   }
 
   .photo-cards__image--second {
-    -webkit-transform: translate(-60px, 25px);
-    -ms-transform: translate(-60px, 25px);
-    transform: translate(-60px, 25px);
+    width: 236px;
+    height: 312px;
+    -webkit-transform: translate(-24px, 39px);
+    -ms-transform: translate(-24px, 39px);
+    transform: translate(-24px, 39px);
   }
 
   .review-card {
@@ -5400,6 +5404,10 @@ button,
     right: 0;
     bottom: 90px;
     gap: 6px;
+  }
+
+  .hero__slide--altay .hero__button {
+    margin-bottom: 68px;
   }
 
   .coach-card {
