@@ -90,6 +90,8 @@
 }
 
 .advantages .swiper-wrapper {
+  z-index: 10;
+
   @include vp-1199 {
     display: flex;
     flex-direction: row;

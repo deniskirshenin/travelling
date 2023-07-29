@@ -2819,8 +2819,9 @@ button,
   background-image: url("../img/clouds-reviews-desktop@1x.webp");
   width: 705px;
   height: 391px;
-  top: 274px;
+  top: 174px;
   left: 0;
+  z-index: 0;
 }
 
 .reviews__wrapper {
@@ -4028,6 +4029,10 @@ button,
 
 .advantages__button-wrapper {
   margin: 5px auto 0 auto;
+}
+
+.advantages .swiper-wrapper {
+  z-index: 10;
 }
 
 .contacts {
