@@ -5432,7 +5432,7 @@ button,
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1199px), (min-resolution: 144dpi) and (max-width: 1199px), (min-resolution: 1.5dppx) and (max-width: 1199px) {
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
   .tour-card--elbrus {
     background-image: url("../img/elbrus-tablet@2x.webp");
   }
@@ -6393,7 +6393,7 @@ button,
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 1.5dppx) and (max-width: 767px) {
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .tour-card--elbrus {
     background-image: url("../img/elbrus-mobile@2x.webp");
   }
@@ -6421,10 +6421,6 @@ button,
   .hero__slide--kamchatka {
     background-image: url("../img/kamchatka-mobile@1x.webp");
   }
-
-  .hero__slide--altay {
-    background-image: url("../img/altay-mobile@1x.webp");
-  }
 }
 
 @media (hover: hover) and (max-width: 767px) {
@@ -6434,6 +6430,12 @@ button,
 
   .questions__button:hover:not(:disabled) {
     padding: 17px 9px;
+  }
+}
+
+@media (max-width: 767px) and (max-width: 767px) {
+  .hero__slide--altay {
+    background-image: url("../img/altay-mobile@2x.webp");
   }
 }
 
