@@ -5338,6 +5338,7 @@ button,
   .training__process-list-item p {
     font-size: 14px;
     line-height: 22px;
+    padding: 0;
   }
 
   .hero__slide {
@@ -6307,6 +6308,7 @@ button,
   .training__process-list-item p {
     font-size: 12px;
     line-height: 18px;
+    padding: 0;
   }
 
   .training__process-icon {
