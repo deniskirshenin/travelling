@@ -5456,10 +5456,6 @@ button,
     background-image: url("../img/clouds-tablet@2x.webp");
   }
 
-  .hero__slide--caucausus {
-    background-image: url("../img/caucausus-tablet@2x.webp");
-  }
-
   .hero__slide--kamchatka {
     background-image: url("../img/kamchatka-tablet@2x.webp");
   }
@@ -5476,6 +5472,12 @@ button,
 
   .questions__button:hover:not(:disabled) {
     padding: 20px 9px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1199px), (min-resolution: 144dpi) and (max-width: 1199px), (min-resolution: 1.5dppx) and (max-width: 1199px) {
+  .hero__slide--caucausus {
+    background-image: url("../img/caucausus-tablet@2x.webp");
   }
 }
 
@@ -6424,10 +6426,6 @@ button,
     background-image: url("../img/clouds-mobile@2x.webp");
   }
 
-  .hero__slide--caucausus {
-    background-image: url("../img/caucausus-mobile@2x.webp");
-  }
-
   .hero__slide--kamchatka {
     background-image: url("../img/kamchatka-mobile@1x.webp");
   }
@@ -6440,6 +6438,12 @@ button,
 
   .questions__button:hover:not(:disabled) {
     padding: 17px 9px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 1.5dppx) and (max-width: 767px) {
+  .hero__slide--caucausus {
+    background-image: url("../img/caucausus-mobile@2x.webp");
   }
 }
 
