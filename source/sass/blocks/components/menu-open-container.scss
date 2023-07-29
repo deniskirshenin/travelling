@@ -1,4 +1,8 @@
 .menu-open-container {
+  display: none;
+}
+
+.menu-open-container--close {
   @include vp-1199 {
     position: fixed;
     top: 0;
@@ -12,8 +16,4 @@
     background-color: $color-black-opacity;
     z-index: 3;
   }
-}
-
-.menu-open-container--close {
-  display: none;
 }
