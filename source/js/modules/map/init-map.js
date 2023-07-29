@@ -7,7 +7,7 @@ interactiveMap.classList.add('map__interactive--active');
 const initMap = () => {
   const map = L.map('map', {scrollWheelZoom: false}).setView([55.82463539574, 37.62663090998426], 13);
   const pinIcon = L.icon({
-    iconUrl: '../../../img/mappinblue.webp',
+    iconUrl: '../img/mappinblue.webp',
     iconSize: [34, 44],
   });
 
