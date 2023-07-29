@@ -19,6 +19,11 @@
 // Blocks
 // ---------------------------------
 
+@import "blocks/sections/hero.scss";
+@import "blocks/sections/questions.scss";
+@import "blocks/sections/reviews.scss";
+@import "blocks/sections/tours.scss";
+@import "blocks/sections/training.scss";
 @import "blocks/components/advantage-card.scss";
 @import "blocks/components/audio-player.scss";
 @import "blocks/components/btn.scss";
@@ -40,11 +45,6 @@
 @import "blocks/sections/footer.scss";
 @import "blocks/sections/gallery.scss";
 @import "blocks/sections/header.scss";
-@import "blocks/sections/questions.scss";
-@import "blocks/sections/reviews.scss";
-@import "blocks/sections/tours.scss";
-@import "blocks/sections/training.scss";
-@import "blocks/sections/hero.scss";
 @import "blocks/components/coach-card.scss";
 
 // ---------------------------------
