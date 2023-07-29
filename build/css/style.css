@@ -3822,7 +3822,7 @@ button,
 .reviews::after {
   position: absolute;
   content: "";
-  background-image: url("../../../img/clouds-reviews-desktop@1x.webp");
+  background-image: url("../img/clouds-reviews-desktop@1x.webp");
   width: 705px;
   height: 391px;
   top: 274px;
@@ -6672,7 +6672,7 @@ button,
   }
 
   .reviews::after {
-    background-image: url("../../../img/clouds-reviews-desktop@2x.webp");
+    background-image: url("../img/clouds-reviews-desktop@2x.webp");
   }
 
   .tours::after {
