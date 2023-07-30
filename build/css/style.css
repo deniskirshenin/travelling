@@ -3593,8 +3593,24 @@ button,
   align-items: center;
 }
 
+.logo.focus-visible:focus {
+  opacity: 0.7;
+}
+
+.logo.focus-visible:active {
+  opacity: 0.5;
+}
+
 .logo--footer {
   margin: 0 100px 0 0;
+}
+
+.logo.focus-visible:focus {
+  opacity: 0.7;
+}
+
+.logo.focus-visible:active {
+  opacity: 0.5;
 }
 
 .logo__icon {
@@ -5028,6 +5044,9 @@ button,
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     margin: 0;
   }
 
@@ -5398,6 +5417,10 @@ button,
 @media (max-width: 767px) {
   .container {
     padding: 0 15px;
+  }
+
+  .btn.focus-visible:focus {
+    padding: 17px 9px;
   }
 
   .btn--link {
@@ -6262,6 +6285,14 @@ button,
 }
 
 @media (hover: hover) and (max-width: 767px) {
+  .btn:hover:not(.focus-visible) {
+    padding: 17px 9px;
+  }
+
+  .btn:hover:not(:disabled) {
+    padding: 17px 9px;
+  }
+
   .hero__button:hover:not(.focus-visible) {
     padding: 17px 0;
   }
@@ -6466,6 +6497,22 @@ button,
   .video__play-button:hover:not(:disabled) .video__play-button-icon path {
     fill: #ffffff;
     stroke: #030a1a;
+  }
+
+  .logo:hover:not(.focus-visible) {
+    opacity: 0.7;
+  }
+
+  .logo:hover:not(:disabled) {
+    opacity: 0.7;
+  }
+
+  .logo:hover:not(.focus-visible) {
+    opacity: 0.7;
+  }
+
+  .logo:hover:not(:disabled) {
+    opacity: 0.7;
   }
 
   .nav-footer__tel:hover:not(.focus-visible) {
