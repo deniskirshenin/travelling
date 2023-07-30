@@ -19,6 +19,16 @@
 
   transition: opacity $trans-default;
 
+  @include vp-767 {
+    @include hover {
+      padding: 17px 9px;
+    }
+
+    @include active {
+      padding: 18px 10px;
+    }
+  }
+
   @include hover-focus {
     padding: 20px 10px;
     border: 1px solid $color-resolution-blue;
@@ -27,10 +37,6 @@
     background-color: $color-default-white;
 
     cursor: pointer;
-
-    @include vp-767 {
-      padding: 17px 9px;
-    }
   }
 
   @include active {

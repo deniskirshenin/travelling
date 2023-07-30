@@ -5419,8 +5419,8 @@ button,
     padding: 0 15px;
   }
 
-  .btn.focus-visible:focus {
-    padding: 17px 9px;
+  .btn.focus-visible:active {
+    padding: 18px 10px;
   }
 
   .btn--link {
@@ -6284,15 +6284,13 @@ button,
   }
 }
 
-@media (hover: hover) and (max-width: 767px) {
+@media (max-width: 767px) and (hover: hover) {
   .btn:hover:not(.focus-visible) {
     padding: 17px 9px;
   }
+}
 
-  .btn:hover:not(:disabled) {
-    padding: 17px 9px;
-  }
-
+@media (hover: hover) and (max-width: 767px) {
   .hero__button:hover:not(.focus-visible) {
     padding: 17px 0;
   }
