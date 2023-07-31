@@ -44,7 +44,7 @@
   @include hover {
     border: 1px solid $color-navy-blue;
 
-    .custom-input input::placeholder {
+    &::placeholder {
       color: $color-navy-blue;
       opacity: 1;
     }
