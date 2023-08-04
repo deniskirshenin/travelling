@@ -51,7 +51,7 @@
   }
 
   @include vp-767 {
-    width: 290px;
+    width: 100%;
 
     padding: 8px 0 0 0;
   }
@@ -271,6 +271,7 @@
 .training__process-list-item {
   flex: 1;
   gap: 26px;
+  justify-content: flex-end;
 
   @include vp-1199 {
     gap: 10px;
@@ -280,7 +281,6 @@
     gap: 0;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-end;
 
     min-height: 61px;
   }
@@ -289,7 +289,7 @@
 .training__process-list-item--boots {
   @include vp-767 {
     padding: 0;
-    align-self: center;
+    align-self: flex-start;
   }
 }
 
@@ -312,11 +312,13 @@
 .training__process-list-item--mountain {
   @include vp-1199 {
     flex-direction: column-reverse;
+    justify-content: flex-start;
   }
 
   @include vp-767 {
     flex-direction: row-reverse;
     min-height: 54px;
+    justify-content: flex-end;
   }
 }
 

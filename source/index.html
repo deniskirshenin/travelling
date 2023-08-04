@@ -37,22 +37,22 @@
               </button>
               <ul class="nav__list nav__list--close">
                 <li class="nav__list-item">
-                  <a class="btn btn--menu-link-dark nav__link" href="#">Туры</a>
+                  <a class="btn btn--menu-link-dark nav__link" href="#tours">Туры</a>
                 </li>
                 <li class="nav__list-item">
-                  <a class="btn btn--menu-link-dark nav__link" href="#">Обучение</a>
+                  <a class="btn btn--menu-link-dark nav__link" href="#training">Обучение</a>
                 </li>
                 <li class="nav__list-item">
-                  <a class="btn btn--menu-link-dark nav__link" href="#">О нас</a>
+                  <a class="btn btn--menu-link-dark nav__link" href="#about">О нас</a>
                 </li>
                 <li class="nav__list-item">
-                  <a class="btn btn--menu-link-dark nav__link" href="#">Отзывы</a>
+                  <a class="btn btn--menu-link-dark nav__link" href="#reviews">Отзывы</a>
                 </li>
                 <li class="nav__list-item">
-                  <a class="btn btn--menu-link-dark nav__link" href="#">Фотографии</a>
+                  <a class="btn btn--menu-link-dark nav__link" href="#gallery">Фотографии</a>
                 </li>
                 <li class="nav__list-item">
-                  <a class="btn btn--menu-link-dark nav__link" href="#">Контакты</a>
+                  <a class="btn btn--menu-link-dark nav__link" href="#contacts">Контакты</a>
                 </li>
               </ul>
               <a class="nav__tel nav__tel--close" href="tel:+88007253232">8 800 725 32 32</a>
@@ -73,7 +73,7 @@
                   </picture>
                   <div class="hero__slide-wrapper">
                     <h2>Захватывающие<br> вершины Кавказа</h2>
-                    <p>В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете<br> через потрясающие ландшафты и&nbsp;совершите<br> восход на&nbsp;вершину горы Чегет.</p>
+                    <p>В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</p>
                     <a class="btn hero__button" href="#">Смотреть тур</a>
                     <div class="hero__slide-details">
                       <div class="hero__slide-details-block hero__slide-details-block--stay">
@@ -94,7 +94,7 @@
                         <source media="(max-width: 1199px)" srcset="./img/video-tablet@1x.webp 1x, ./img/video-tablet@2x.webp 2x">
                         <img class="video__poster" id="video__poster" width="482" height="317" src="./img/video-desktop@1x.webp" alt="Видео с восхождения на Эльбрус." srcset="./img/video-desktop@1x.webp 1x, ./img/video-desktop@2x.webp 2x" loading="lazy">
                       </picture>
-                      <iframe class="video__player" id="video" width="482" height="317" src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1" allow="autoplay; encrypted-media;" allowfullscreen loading="lazy"></iframe>
+                      <iframe class="video__player" id="video" width="482" height="317" src="https://www.youtube.com/embed/9TZXsZItgdw??enablejsapi=1&rel=0&autoplay=1" allow="autoplay; encrypted-media;" allowfullscreen loading="lazy"></iframe>
                       <button class="video__play-button">
                         <svg class="video__play-button-icon" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <circle cx="28" cy="28" r="27.5" fill="white" fill-opacity="0.2" stroke="white"/>
@@ -112,7 +112,7 @@
                   </picture>
                   <div class="hero__slide-wrapper">
                     <h2>Невероятная<br> природа Камчатки</h2>
-                    <p>Незабываемое приключение, во&nbsp;время которого<br> вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых<br> нетронутых уголков дикой природы в&nbsp;мире.</p>
+                    <p>Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.</p>
                     <a class="btn hero__button" href="#">Смотреть тур</a>
                     <div class="hero__slide-details">
                       <div class="hero__slide-details-block hero__slide-details-block--stay">
@@ -148,7 +148,7 @@
                   </picture>
                   <div class="hero__slide-wrapper">
                     <h2>Магические пейзажи Алтайского Края</h2>
-                    <p>Алтайский трекинг-тур&nbsp;&mdash; это захватывающее<br> приключение с&nbsp;посещением магических<br> и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
+                    <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
                     <a class="btn hero__button" href="#">Смотреть тур</a>
                     <div class="hero__slide-details">
                       <div class="hero__slide-details-block hero__slide-details-block--stay">
@@ -165,7 +165,7 @@
                       </div>
                     </div>
                     <div class="audio-player">
-                      <iframe style="border:none;width:340px;height:220px;" width="340" height="220" src="https://music.yandex.ru/iframe/#album/25474374" loading="lazy"></iframe>
+                      <iframe id="audio" style="border:none;width:340px;height:220px;" width="340" height="220" src="https://music.yandex.ru/iframe/#album/25474374" loading="lazy"></iframe>
                     </div>
                   </div>
                 </article>
@@ -173,7 +173,7 @@
               <div class="hero__pagination"></div>
             </div>
         </section>
-        <section class="tours">
+        <section class="tours" id="tours">
           <div class="container">
             <div class="tours__wrapper swiper">
               <h2>Ближайшие туры</h2>
@@ -432,7 +432,7 @@
             </div>
           </div>
         </section>
-        <section class="training">
+        <section class="training" id="training">
           <div class="container">
             <div class="training__wrapper">
               <h2>Обучение</h2>
@@ -654,7 +654,7 @@
             </div>
           </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="about__wrapper">
               <div class="about__image">
                 <picture>
@@ -676,7 +676,7 @@
               </div>
             </div>
         </section>
-        <section class="reviews">
+        <section class="reviews" id="reviews">
           <div class="reviews__wrapper swiper">
             <div class="reviews__header-wrapper">
               <h2>Отзывы</h2>
@@ -823,7 +823,7 @@
             </div>
           </div>
         </section>
-        <section class="gallery">
+        <section class="gallery" id="gallery">
           <div class="gallery__wrapper swiper">
             <div class="gallery__header-wrapper">
               <h2>Фотогалерея</h2>
@@ -926,12 +926,12 @@
             <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
             <div class="questions__form" data-form-validate data-callback="base">
               <form method="post" action="https://echo.htmlacademy.ru/">
-                <div class="custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                <div class="custom-input" data-validate-type="text" data-limitation="name" data-required>
                   <label for="name">
                     <input type="text" name="name" id="name" placeholder="Как к вам обращаться?" required>
                   </label>
                 </div>
-                <div class="custom-input" data-validate-type="phone" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                <div class="custom-input" data-validate-type="phone" data-required>
                   <label for="tel">
                     <input type="tel" name="tel" id="tel" placeholder="Телефон" required>
                   </label>
@@ -941,7 +941,7 @@
             </div>
           </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
           <div class="container">
             <div class="contacts__wrapper">
               <div class="contacts__left-column">
@@ -1057,7 +1057,7 @@
         </div>
       </footer>
       <div class="menu-open-container"></div>
-    </div>
+    </div>  
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

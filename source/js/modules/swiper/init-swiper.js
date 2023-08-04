@@ -26,6 +26,8 @@ const galleryButtonNext = document.querySelector('.gallery__button-next');
 
 const initHeroSwiper = () => new Swiper(hero, {
   direction: 'horizontal',
+  focusableElements: 'a',
+  loop: false,
   slidesPerView: 1,
   speed: 300,
   pagination: {
@@ -33,7 +35,19 @@ const initHeroSwiper = () => new Swiper(hero, {
     clickable: true,
     type: 'bullets',
   },
+  on: {
+    slideChange() {
+      let slides = document.querySelectorAll('.hero__slide');
+      slides.forEach(function (slide) {
+        let youtubePlayer = slide.querySelector('iframe');
+        if (youtubePlayer) {
+          youtubePlayer.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+        }
+      });
+    },
+  },
 });
+
 
 const initToursSwiper = () => new Swiper(tours, {
   direction: 'horizontal',
@@ -103,11 +117,12 @@ const initReviewsSwiper = () => new Swiper(reviews, {
 
 const initAdvantagesSwiper = () => {
   const initSwiper = () => {
-    if (window.innerWidth > 1200 && !advantagesSwiper) {
+    if (window.innerWidth > 1199 && !advantagesSwiper) {
       advantagesSwiper = new Swiper(advantages, {
         direction: 'horizontal',
         loop: true,
         slidesPerView: 'auto',
+        autoHeight: true,
         centeredSlides: true,
         initialSlide: 2,
         spaceBetween: 30,
