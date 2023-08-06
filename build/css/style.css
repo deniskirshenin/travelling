@@ -2652,6 +2652,7 @@ button,
 @media (max-width: 1199px) {
   .hero__slide-wrapper {
     width: 678px;
+    padding: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -4276,6 +4277,7 @@ button,
     grid-template-columns: 1fr 144px 1fr;
     margin: 0;
     width: 100%;
+    overflow-y: scroll;
   }
 }
 @media (max-width: 767px) {
@@ -6465,7 +6467,7 @@ button,
     left: 50%;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: #ffffff;
     color: #2d383f;
     z-index: 4;

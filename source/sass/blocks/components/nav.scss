@@ -33,6 +33,7 @@
       grid-template-columns: 1fr 144px 1fr;
       margin: 0;
       width: 100%;
+      overflow-y: scroll;
     }
 
     @include vp-767 {
