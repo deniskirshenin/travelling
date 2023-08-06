@@ -2333,7 +2333,7 @@ button,
   }
 }
 .btn--menu-link-dark.focus-visible:focus {
-  padding: 3px 5px 2px 5px;
+  padding: 2px 5px 2px 5px;
   border: none;
   outline: 1px solid #ffffff;
   background-color: transparent;
@@ -2368,7 +2368,7 @@ button,
   }
 }
 .btn--menu-link-light.focus-visible:focus {
-  padding: 3px 5px 2px 5px;
+  padding: 2px 5px 2px 5px;
   border: none;
   outline: 1px solid #2d383f;
   background-color: transparent;
@@ -2555,6 +2555,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: rgba(2, 102, 193, 0.1);
   width: 100%;
   margin: 0 auto;

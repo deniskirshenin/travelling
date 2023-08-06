@@ -27,10 +27,9 @@ const galleryButtonPrev = document.querySelector('.gallery__button-prev');
 const galleryButtonNext = document.querySelector('.gallery__button-next');
 
 const initHeroSwiper = () => new Swiper(hero, {
-  direction: 'horizontal',
-  focusableElements: 'a',
-  loop: false,
-  slidesPerView: 1,
+  cssMode: true,
+  loop: true,
+  slidesPerView: 'auto',
   speed: 300,
   pagination: {
     el: heroPagination,
@@ -75,6 +74,7 @@ const initToursSwiper = () => new Swiper(tours, {
 });
 
 const initTrainingSwiper = () => new Swiper(training, {
+  cssMode: true,
   direction: 'horizontal',
   breakpoints: {
     1200: {
