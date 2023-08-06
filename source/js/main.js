@@ -24,8 +24,8 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     openClick();
-    initHeroSwiper();
     onPlayClick();
+    initHeroSwiper();
     initToursSwiper();
     initTrainingSwiper();
     initReviewsSwiper();

@@ -1,7 +1,9 @@
 import Swiper from '../../vendor/swiper';
+import {button, image, videoContainer} from '../video/init-video';
 
 const hero = document.querySelector('.hero__wrapper');
 const heroPagination = document.querySelector('.hero__pagination');
+const audio = document.querySelector('.audio-player');
 
 const tours = document.querySelector('.tours__wrapper');
 const toursButtonPrev = document.querySelector('.tours__button-prev');
@@ -37,13 +39,14 @@ const initHeroSwiper = () => new Swiper(hero, {
   },
   on: {
     slideChange() {
-      let slides = document.querySelectorAll('.hero__slide');
-      slides.forEach(function (slide) {
-        let youtubePlayer = slide.querySelector('iframe');
-        if (youtubePlayer) {
-          youtubePlayer.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-        }
-      });
+      videoContainer.innerHTML = '';
+      image.style.display = 'block';
+      button.style.display = 'block';
+      if (!audio.innerHTML) {
+        audio.innerHTML = '';
+      } else {
+        audio.innerHTML = '<iframe id="audio" style="border:none;width:340px;height:220px;" width="340" height="220" src="https://music.yandex.ru/iframe/#album/25474374" loading="lazy"></iframe>';
+      }
     },
   },
 });

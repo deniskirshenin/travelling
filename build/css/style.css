@@ -4599,7 +4599,7 @@ button,
 .photo-cards__image--first {
   width: 308px;
   height: 407px;
-  top: 21px;
+  top: 201px;
   right: 102px;
 }
 @media (max-width: 1199px) {
@@ -4614,7 +4614,7 @@ button,
 .photo-cards__image--second {
   width: 277px;
   height: 366px;
-  top: 115px;
+  top: 294px;
   right: 0;
 }
 @media (max-width: 1199px) {
