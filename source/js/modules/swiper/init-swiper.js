@@ -120,28 +120,30 @@ const initReviewsSwiper = () => new Swiper(reviews, {
 
 const initAdvantagesSwiper = () => {
   const initSwiper = () => {
+    advantagesSwiper = new Swiper(advantages, {
+      direction: 'horizontal',
+      loop: true,
+      slidesPerView: 'auto',
+      autoHeight: true,
+      centeredSlides: true,
+      initialSlide: 2,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: advantagesButtonNext,
+        prevEl: advantagesButtonPrev,
+      },
+    });
+  };
+  initSwiper();
+  const resize = () => {
     if (window.innerWidth > 1199 && !advantagesSwiper) {
-      advantagesSwiper = new Swiper(advantages, {
-        direction: 'horizontal',
-        loop: true,
-        slidesPerView: 'auto',
-        autoHeight: true,
-        centeredSlides: true,
-        initialSlide: 2,
-        spaceBetween: 30,
-        navigation: {
-          nextEl: advantagesButtonNext,
-          prevEl: advantagesButtonPrev,
-        },
-      });
+      initSwiper();
     } else if (window.innerWidth < 1200 && advantagesSwiper) {
       advantagesSwiper.destroy();
     }
   };
-  initSwiper();
-  window.addEventListener('resize', () => {
-    initSwiper();
-  });
+
+  window.addEventListener('resize', resize());
 };
 
 const initGallerySwiper = () => new Swiper(gallery, {

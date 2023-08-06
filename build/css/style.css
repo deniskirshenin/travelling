@@ -5875,6 +5875,12 @@ button,
         -ms-flex-pack: center;
             justify-content: center;
     width: 678px;
+    height: auto;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    -webkit-transition-duration: 0;
+            transition-duration: 0;
     gap: 30px;
   }
 }
