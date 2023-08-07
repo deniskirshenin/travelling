@@ -22,6 +22,10 @@
   &.focus-visible:active {
     @content;
   }
+
+  &:active {
+    @content;
+  }
 }
 
 @mixin hover-focus {

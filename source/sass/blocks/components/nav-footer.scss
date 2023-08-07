@@ -7,7 +7,8 @@
 
   padding: 0;
 
-  gap: 99px;
+  column-gap: 99px;
+  row-gap: 20px;
 
   @include vp-1199 {
     display: grid;
@@ -105,6 +106,7 @@
   font-weight: 600;
   line-height: 18px;
   align-self: center;
+  grid-column: 3 / 4;
 
   @include vp-1199 {
     display: none;
@@ -133,7 +135,7 @@
 }
 
 .nav-footer__link {
-  word-break: break-all;
+  white-space: nowrap;
 
   @include vp-1199 {
     font-family: inherit;

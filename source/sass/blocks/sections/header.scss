@@ -16,11 +16,11 @@
       left: 50%;
       top: 0;
       width: 100%;
-      height: auto;
+      max-height: 100%;
       background-color: $color-default-white;
       color: $color-default-black;
       z-index: 4;
-      overflow-y: scroll;
+      overflow: scroll;
     }
   }
 

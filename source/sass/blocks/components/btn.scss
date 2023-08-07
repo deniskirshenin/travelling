@@ -67,7 +67,7 @@
     }
 
     @include active {
-      padding: 12px 10px 12px 11px;
+      padding: 13px 11px 13px 12px;
       color: $color-default-white;
       background-color: $color-resolution-blue;
       cursor: pointer;
@@ -219,7 +219,7 @@
     }
 
     @include active {
-      padding: 3px 5px 2px 5px;
+      padding: 3px 5px;
       border: none;
       background-color: transparent;
       color: $color-default-black;
