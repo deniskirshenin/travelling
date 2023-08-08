@@ -6627,36 +6627,6 @@ button,
   }
 }
 
-@media (max-width: 767px) and (hover: hover) {
-  .btn:hover:not(.focus-visible) {
-    padding: 17px 9px;
-  }
-}
-
-@media (hover: hover) and (max-width: 767px) {
-  .hero__button:hover:not(.focus-visible) {
-    padding: 17px 0;
-  }
-
-  .hero__button:hover:not(:disabled) {
-    padding: 17px 0;
-  }
-
-  .questions__button:hover:not(.focus-visible) {
-    padding: 17px 9px;
-  }
-
-  .questions__button:hover:not(:disabled) {
-    padding: 17px 9px;
-  }
-}
-
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .tours::after {
-    background-image: url("../img/clouds-mobile@2x.webp");
-  }
-}
-
 @media print {
   /* Prevent printers from removing background-images of controls. */
 
@@ -6898,5 +6868,35 @@ button,
 
   .tours::before {
     background-image: url("../img/clouds-small-desktop@2x.webp");
+  }
+}
+
+@media (max-width: 767px) and (hover: hover) {
+  .btn:hover:not(.focus-visible) {
+    padding: 17px 9px;
+  }
+}
+
+@media (hover: hover) and (max-width: 767px) {
+  .hero__button:hover:not(.focus-visible) {
+    padding: 17px 0;
+  }
+
+  .hero__button:hover:not(:disabled) {
+    padding: 17px 0;
+  }
+
+  .questions__button:hover:not(.focus-visible) {
+    padding: 17px 9px;
+  }
+
+  .questions__button:hover:not(:disabled) {
+    padding: 17px 9px;
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .tours::after {
+    background-image: url("../img/clouds-mobile@2x.webp");
   }
 }
