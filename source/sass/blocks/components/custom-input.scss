@@ -52,10 +52,18 @@
 
   @include focus {
     outline: 1px solid $color-resolution-blue;
+
+    &::placeholder {
+      color: transparent;
+    }
   }
 
   @include active {
     border: 1px solid $color-resolution-blue;
+
+    &::placeholder {
+      color: transparent;
+    }
   }
 
   &:disabled {

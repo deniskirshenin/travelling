@@ -3,7 +3,7 @@
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: 205px 1fr 142px;
+  grid-template-columns: 205px 655px 1fr;
 
   padding: 0;
 
@@ -33,6 +33,7 @@
   justify-content: flex-start;
   gap: 22px;
   flex-wrap: wrap;
+  width: 100%;
 
   list-style-type: none;
 
@@ -67,6 +68,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  flex-wrap: wrap;
 
   @include vp-1199 {
     gap: 10px;
@@ -86,6 +88,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  flex-wrap: wrap;
 
   @include vp-1199 {
     gap: 10px;
@@ -99,18 +102,25 @@
 }
 
 .nav-footer__tel {
-  color: $color-default-black;
-  font-family: inherit;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
   align-self: center;
   grid-column: 3 / 4;
 
   @include vp-1199 {
     display: none;
   }
+}
+
+.nav-footer__tel a {
+  color: $color-default-black;
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
 
   @include hover-focus {
     color: $color-resolution-blue;

@@ -4,6 +4,7 @@ import {openClick} from './modules/menu/init-menu';
 import {initAdvantagesSwiper, initGallerySwiper, initHeroSwiper, initReviewsSwiper, initToursSwiper, initTrainingSwiper} from './modules/swiper/init-swiper';
 import {onPlayClick} from './modules/video/init-video';
 import {initMap} from './modules/map/init-map';
+import {checkHeaderHeight} from './modules/hero/init-hero';
 
 // ---------------------------------
 
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    checkHeaderHeight();
     openClick();
     onPlayClick();
     initHeroSwiper();

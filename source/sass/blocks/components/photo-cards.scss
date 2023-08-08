@@ -21,7 +21,7 @@
   &--first {
     width: 308px;
     height: 407px;
-    top: 201px;
+    bottom: 192px;
     right: 102px;
 
     @include vp-1199 {
@@ -34,7 +34,7 @@
   &--second {
     width: 277px;
     height: 366px;
-    top: 294px;
+    bottom: 140px;
     right: 0;
 
     @include vp-1199 {

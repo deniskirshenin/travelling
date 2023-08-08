@@ -1,6 +1,6 @@
 .video {
   position: absolute;
-  top: 301px;
+  bottom: 182px;
   right: 0;
   z-index: 2;
   width: 482px;
@@ -67,7 +67,7 @@
   @include active {
     .video__play-button-icon circle {
       fill: $color-resolution-blue;
-      fill-opacity: none;
+      fill-opacity: 1;
       stroke: $color-resolution-blue;
     }
 
