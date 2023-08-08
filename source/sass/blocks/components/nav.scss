@@ -226,7 +226,7 @@
   }
 }
 
-.nav__tel--close {
+.nav__tel--close a {
   color: $color-default-white;
 
   @include hover-focus {
@@ -243,8 +243,6 @@
 }
 
 .nav__tel--open {
-  color: $color-elephant;
-
   @include vp-1199 {
     grid-column: 3 / 4;
   }
@@ -254,6 +252,10 @@
     grid-column: 2 / 3;
     margin: 8px 0 0 2px;
   }
+}
+
+.nav__tel--open a {
+  color: $color-elephant;
 
   @include hover-focus {
     color: $color-resolution-blue;
